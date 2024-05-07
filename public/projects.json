@@ -71,9 +71,18 @@
     ],
     "technology": ["React Js", "Next Js", "HTML", "CSS", "TypeScript"],
     "features": [
-      "Streamlined order management for home cooks",
-      "Enhanced user experience compared to traditional group chats",
-      "Real-time order updates and notifications"
+      {
+        "title": "Streamlined Order Management",
+        "description": "Streamlined order management for home cooks."
+      },
+      {
+        "title": "Enhanced User Experience",
+        "description": "Enhanced user experience compared to traditional group chats."
+      },
+      {
+        "title": "Real-time Updates",
+        "description": "Real-time order updates and notifications."
+      }
     ],
     "date": "January 1, 2021",
     "demoUrl": "https://webite-demo.com",
@@ -81,170 +90,50 @@
   },
   {
     "id": 3,
-    "title": "Webite",
-    "description": "Webite is a food ordering app designed to bridge the gap between home cooks and friends. This project was deeply personal, as I am an passionate home cook who sells home-cooked meals to my friends due to the lack of food options at University. The app was developed to streamline order management and enhance the user experience, transcending the limitations of traditional communication and management methods used previously. \n\nPrior to developing Webite, I relied on Excel spreadsheets to keep track of orders and payments. This method, while somewhat effective, became increasingly annoying and troublesome as the volume of orders grew. Managing these spreadsheets was time-consuming and error-prone, leading to challenges in tracking payments accurately and efficiently.\n\nCommunication with friends was primarily conducted through WhatsApp. While this platform provided a basic means to notify and update menu information, it lacked organization and was not optimal for managing a growing customer base. The interface did not support the structured presentation of menu items, nor did it allow for easy modifications and updates in real-time. This often resulted in confusion and miscommunication.\n\nWebite revolutionizes this process by offering a centralized platform where I can manage menus, take orders, and process payments seamlessly. Its tailored interface is designed specifically for culinary commerce, enabling better organization, real-time updates, and a more engaging user experience compared to the ad-hoc systems previously used.\n\nThe introduction of Webite has significantly improved the operational efficiency and satisfaction of both the cook and the customers, proving to be a substantial upgrade over the combination of Excel and WhatsApp.",
-    "images": [
-      "/webite/landing.png",
-      "/webite/home.png",
-      "/webite/chef_menu.png",
-      "/webite/customer_menu.png",
-      "/webite/chef_review.png",
-      "/webite/customer_review.png",
-      "/webite/summary.png"
-    ],
-    "technology": [
-      "React Js",
-      "Flask",
-      "Python",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "Redis",
-      "Docker",
-      "SQLite",
-      "Jira"
-    ],
+    "title": "coming soon",
+    "description": "coming soon",
+    "images": [],
+    "technology": [],
     "features": [
       {
-        "title": "Microservices Architecture -- Integrated Gateway",
-        "description": "Utilizes a central gateway for managing communications between microservices, enhancing application scalability by simplifying interactions."
-      },
-      {
-        "title": "User Authentication System -- Secure and Reliable Authentication",
-        "description": "Incorporates server-side sessions with Redis to ensure fast session management and robust security measures to protect user data."
-      },
-      {
-        "title": "Chef's Management Interface -- Enhanced Meal Management",
-        "description": "Features an interface for chefs to manage meal details, which includes a image uploading feature, ensuring visually appealing meal presentations. It also allows chefs to highlight daily specials to attract customers by setting \"today's offer\" ."
-      },
-      {
-        "title": "Anonymous Review and Rating System -- Engaging User Experience",
-        "description": "Includes an anonymous review and rating system that allows customers to provide honest feedback on food and service quality, enhancing overall customer engagement and satisfaction."
-      },
-      {
-        "title": "Order Payment Tracking System -- Comprehensive financial management:",
-        "description": "Implements an order summary system that keeps tracks of all orders and payments, enabling chefs to organize and monitor which customers have paid, enhancing operational efficiency and financial management."
-      },
-      {
-        "title": "Optimized Development and Project Management",
-        "description": "Adopts Agile methodologies for flexible and efficient development processes, and employs Jira and GitHub for task management. This facilitates project coordination and progress tracking among team members, ensuring streamlined operations and effective team collaboration."
+        "title": "coming soon",
+        "description": "coming soon"
       }
     ],
-    "date": "January, 2024",
-    "demoUrl": "https://webite-demo.com",
-    "githubUrl": "https://github.com/douglasquan/WeBite-Food-Ordering-Management-for-Home-Cooks-"
+    "date": "coming soon",
+    "demoUrl": "coming soon",
+    "githubUrl": "coming soon"
   },
   {
     "id": 4,
-    "title": "Webite",
-    "description": "Webite is a food ordering app designed to bridge the gap between home cooks and friends. This project was deeply personal, as I am an passionate home cook who sells home-cooked meals to my friends due to the lack of food options at University. The app was developed to streamline order management and enhance the user experience, transcending the limitations of traditional communication and management methods used previously. \n\nPrior to developing Webite, I relied on Excel spreadsheets to keep track of orders and payments. This method, while somewhat effective, became increasingly annoying and troublesome as the volume of orders grew. Managing these spreadsheets was time-consuming and error-prone, leading to challenges in tracking payments accurately and efficiently.\n\nCommunication with friends was primarily conducted through WhatsApp. While this platform provided a basic means to notify and update menu information, it lacked organization and was not optimal for managing a growing customer base. The interface did not support the structured presentation of menu items, nor did it allow for easy modifications and updates in real-time. This often resulted in confusion and miscommunication.\n\nWebite revolutionizes this process by offering a centralized platform where I can manage menus, take orders, and process payments seamlessly. Its tailored interface is designed specifically for culinary commerce, enabling better organization, real-time updates, and a more engaging user experience compared to the ad-hoc systems previously used.\n\nThe introduction of Webite has significantly improved the operational efficiency and satisfaction of both the cook and the customers, proving to be a substantial upgrade over the combination of Excel and WhatsApp.",
-    "images": [
-      "/webite/landing.png",
-      "/webite/home.png",
-      "/webite/chef_menu.png",
-      "/webite/customer_menu.png",
-      "/webite/chef_review.png",
-      "/webite/customer_review.png",
-      "/webite/summary.png"
-    ],
-    "technology": [
-      "React Js",
-      "Flask",
-      "Python",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "Redis",
-      "Docker",
-      "SQLite",
-      "Jira"
-    ],
+    "title": "coming soon",
+    "description": "coming soon",
+    "images": [],
+    "technology": [],
     "features": [
       {
-        "title": "Microservices Architecture -- Integrated Gateway",
-        "description": "Utilizes a central gateway for managing communications between microservices, enhancing application scalability by simplifying interactions."
-      },
-      {
-        "title": "User Authentication System -- Secure and Reliable Authentication",
-        "description": "Incorporates server-side sessions with Redis to ensure fast session management and robust security measures to protect user data."
-      },
-      {
-        "title": "Chef's Management Interface -- Enhanced Meal Management",
-        "description": "Features an interface for chefs to manage meal details, which includes a image uploading feature, ensuring visually appealing meal presentations. It also allows chefs to highlight daily specials to attract customers by setting \"today's offer\" ."
-      },
-      {
-        "title": "Anonymous Review and Rating System -- Engaging User Experience",
-        "description": "Includes an anonymous review and rating system that allows customers to provide honest feedback on food and service quality, enhancing overall customer engagement and satisfaction."
-      },
-      {
-        "title": "Order Payment Tracking System -- Comprehensive financial management:",
-        "description": "Implements an order summary system that keeps tracks of all orders and payments, enabling chefs to organize and monitor which customers have paid, enhancing operational efficiency and financial management."
-      },
-      {
-        "title": "Optimized Development and Project Management",
-        "description": "Adopts Agile methodologies for flexible and efficient development processes, and employs Jira and GitHub for task management. This facilitates project coordination and progress tracking among team members, ensuring streamlined operations and effective team collaboration."
+        "title": "coming soon",
+        "description": "coming soon"
       }
     ],
-    "date": "January, 2024",
-    "demoUrl": "https://webite-demo.com",
-    "githubUrl": "https://github.com/douglasquan/WeBite-Food-Ordering-Management-for-Home-Cooks-"
+    "date": "coming soon",
+    "demoUrl": "coming soon",
+    "githubUrl": "coming soon"
   },
   {
     "id": 5,
-    "title": "Webite",
-    "description": "Webite is a food ordering app designed to bridge the gap between home cooks and friends. This project was deeply personal, as I am an passionate home cook who sells home-cooked meals to my friends due to the lack of food options at University. The app was developed to streamline order management and enhance the user experience, transcending the limitations of traditional communication and management methods used previously. \n\nPrior to developing Webite, I relied on Excel spreadsheets to keep track of orders and payments. This method, while somewhat effective, became increasingly annoying and troublesome as the volume of orders grew. Managing these spreadsheets was time-consuming and error-prone, leading to challenges in tracking payments accurately and efficiently.\n\nCommunication with friends was primarily conducted through WhatsApp. While this platform provided a basic means to notify and update menu information, it lacked organization and was not optimal for managing a growing customer base. The interface did not support the structured presentation of menu items, nor did it allow for easy modifications and updates in real-time. This often resulted in confusion and miscommunication.\n\nWebite revolutionizes this process by offering a centralized platform where I can manage menus, take orders, and process payments seamlessly. Its tailored interface is designed specifically for culinary commerce, enabling better organization, real-time updates, and a more engaging user experience compared to the ad-hoc systems previously used.\n\nThe introduction of Webite has significantly improved the operational efficiency and satisfaction of both the cook and the customers, proving to be a substantial upgrade over the combination of Excel and WhatsApp.",
-    "images": [
-      "/webite/landing.png",
-      "/webite/home.png",
-      "/webite/chef_menu.png",
-      "/webite/customer_menu.png",
-      "/webite/chef_review.png",
-      "/webite/customer_review.png",
-      "/webite/summary.png"
-    ],
-    "technology": [
-      "React Js",
-      "Flask",
-      "Python",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "Redis",
-      "Docker",
-      "SQLite",
-      "Jira"
-    ],
+    "title": "coming soon",
+    "description": "coming soon",
+    "images": [],
+    "technology": [],
     "features": [
       {
-        "title": "Microservices Architecture -- Integrated Gateway",
-        "description": "Utilizes a central gateway for managing communications between microservices, enhancing application scalability by simplifying interactions."
-      },
-      {
-        "title": "User Authentication System -- Secure and Reliable Authentication",
-        "description": "Incorporates server-side sessions with Redis to ensure fast session management and robust security measures to protect user data."
-      },
-      {
-        "title": "Chef's Management Interface -- Enhanced Meal Management",
-        "description": "Features an interface for chefs to manage meal details, which includes a image uploading feature, ensuring visually appealing meal presentations. It also allows chefs to highlight daily specials to attract customers by setting \"today's offer\" ."
-      },
-      {
-        "title": "Anonymous Review and Rating System -- Engaging User Experience",
-        "description": "Includes an anonymous review and rating system that allows customers to provide honest feedback on food and service quality, enhancing overall customer engagement and satisfaction."
-      },
-      {
-        "title": "Order Payment Tracking System -- Comprehensive financial management:",
-        "description": "Implements an order summary system that keeps tracks of all orders and payments, enabling chefs to organize and monitor which customers have paid, enhancing operational efficiency and financial management."
-      },
-      {
-        "title": "Optimized Development and Project Management",
-        "description": "Adopts Agile methodologies for flexible and efficient development processes, and employs Jira and GitHub for task management. This facilitates project coordination and progress tracking among team members, ensuring streamlined operations and effective team collaboration."
+        "title": "coming soon",
+        "description": "coming soon"
       }
     ],
-    "date": "January, 2024",
-    "demoUrl": "https://webite-demo.com",
-    "githubUrl": "https://github.com/douglasquan/WeBite-Food-Ordering-Management-for-Home-Cooks-"
+    "date": "coming soon",
+    "demoUrl": "coming soon",
+    "githubUrl": "coming soon"
   }
 ]
