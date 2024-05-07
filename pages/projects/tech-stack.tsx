@@ -1,6 +1,50 @@
 import React from "react";
 
-// Assuming this is your centralized list of all skills with images
+interface Skills {
+  "React Js": string;
+  "Next Js": string;
+  HTML: string;
+  CSS: string;
+  JavaScript: string;
+  TypeScript: string;
+  "Material UI": string;
+  "Tailwind CSS": string;
+  "Node Js": string;
+  Django: string;
+  Flask: string;
+  GraphQL: string;
+  Redis: string;
+  MySQL: string;
+  Postgresql: string;
+  MongoDB: string;
+  Firebase: string;
+  Python: string;
+  R: string;
+  Matplotlib: string;
+  Pandas: string;
+  Numpy: string;
+  Excel: string;
+  Tensorflow: string;
+  Keras: string;
+  Jupyter: string;
+  "Google Colab": string;
+  "scikit-learn": string;
+  PyTorch: string;
+  Git: string;
+  GitHub: string;
+  Docker: string;
+  "VS Code": string;
+  Postman: string;
+  Figma: string;
+  Pycharm: string;
+  "UNIX / Linux": string;
+  OpenCV: string;
+  Java: string;
+  C: string;
+  Jira: string;
+  SQLite: string;
+}
+
 const allSkills = {
   "React Js":
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -83,14 +127,19 @@ interface TechnologyListProps {
 const TechnologyList: React.FC<TechnologyListProps> = ({ technologies }) => {
   return (
     <div className="mt-4 flex flex-wrap justify-center gap-4">
-      {technologies.map((tech: string, index: number) => (
-        <div key={index} className="group relative flex justify-center">
-          <img src={allSkills[tech]} alt={tech} className="w-10 h-10" />
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-black text-white text-xs rounded hidden group-hover:block">
-            {tech}
-          </span>
-        </div>
-      ))}
+      {technologies.map((tech, index) => {
+        const techIcon = allSkills[tech as keyof Skills]; // TypeScript knows `tech` is a key of `Skills`
+        return techIcon ? (
+          <div key={index} className="group relative flex justify-center items-center">
+            <img src={techIcon} alt={tech} className="w-10 h-10" />
+            <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-black text-white text-xs rounded hidden group-hover:block">
+              {tech}
+            </span>
+          </div>
+        ) : (
+          <div key={index}>Missing Icon for {tech}</div> // Handle missing icons gracefully
+        );
+      })}
     </div>
   );
 };

@@ -66,7 +66,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
     const nextIndex =
       direction === "next" ? currentIndex + 1 : currentIndex - 1;
     if (nextIndex >= 0 && nextIndex < projects.length) {
-      router.push(`/projects/${projects[nextIndex].id}`);
+      router.push(`/projects/${projects[nextIndex].id.toString()}`);
     }
   };
 
@@ -172,13 +172,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  // Ensure params and params.id are defined
   const id = params?.id;
   if (!id) {
     return { notFound: true };
   }
 
-  const project = projects.find((p: Project) => p.id.toString() === id);
+  const project = projects.find((p) => p.id.toString() === id.toString());
   if (!project) {
     return { notFound: true };
   }

@@ -62,7 +62,7 @@ const HeroSection = () => {
         </div>
         {/* background */}
         <p className="text-ash-gray text-xl md:text-2xl lg:text-3xl font-semibold mb-2 w-full lg:max-w-4xl">
-          I'm a third-year undergraduate specializing in Computer Science with a
+          I&apos;m a third-year undergraduate specializing in Computer Science with a
           minor in Mathematics at the University of Toronto.
         </p>
         {/* BUTTONS */}
