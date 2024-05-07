@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { useRouter } from "next/router";
 import projects from "@/public/projects.json";
 import ImageSlider from "@/components/ui/image-slider-project"; // Adjust path as necessary
-import TechnologyList from "./tech-stack";
+import TechnologyList from "./[tech-stack]";
 import { IoMdArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
 
