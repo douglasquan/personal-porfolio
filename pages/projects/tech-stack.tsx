@@ -125,12 +125,19 @@ interface TechnologyListProps {
 }
 
 const TechnologyList: React.FC<TechnologyListProps> = ({ technologies }) => {
+  if (!technologies) {
+    console.error("TechnologyList received undefined 'technologies' prop");
+    return <div>No technologies available</div>;
+  }
   return (
     <div className="mt-4 flex flex-wrap justify-center gap-4">
       {technologies.map((tech, index) => {
         const techIcon = allSkills[tech as keyof Skills]; // TypeScript knows `tech` is a key of `Skills`
         return techIcon ? (
-          <div key={index} className="group relative flex justify-center items-center">
+          <div
+            key={index}
+            className="group relative flex justify-center items-center"
+          >
             <img src={techIcon} alt={tech} className="w-10 h-10" />
             <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-black text-white text-xs rounded hidden group-hover:block">
               {tech}
