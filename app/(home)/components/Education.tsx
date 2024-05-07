@@ -12,25 +12,23 @@ const Education: React.FC = () => {
   });
 
   return (
-    <div className="pt-16 pb-10 h-screen">
-      <h2 className="font-bold text-6xl mt-48 mb-20 w-full text-center text-accent">
+    <div className="pt-12 pb-6 sm:pt-16 sm:pb-10">
+      <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mt-12 sm:mt-24 md:mt-48 mb-10 sm:mb-20 text-center text-accent">
         Education
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-full sm:w-3/4 mx-auto relative">
         {/* <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-black origin-top"
+          className="absolute left-0 sm:left-9 top-0 w-[2px] sm:w-[4px] h-full bg-black origin-top"
         /> */}
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between ml-0 sm:ml-4">
           <Details
-            type="Honours Bachelor of Science, Computer Science Specialist & Mathematics Minor "
+            type="Honours Bachelor of Science, Computer Science Specialist & Mathematics Minor"
             time="Sep 2021 - May 2025"
-            place="University of Toronto "
-            info="CGPA: 3.51/4.0 Relevant Coursework: Data Structures, Software development, Web Development, Database Management, Systems
-						Programming, Artificial Intelligence, Machine Learning, Neural Network and Deep Learning, Information Security,
-						Computer Vision, Computer Architecture, Computer Organization, Operating Systems, Computer Networks"
+            place="University of Toronto"
+            info="CGPA: 3.51/4.0. Relevant Coursework: Data Structures, Software Development, Web Development, Database Management, Systems Programming, Artificial Intelligence, Machine Learning, Neural Network and Deep Learning, Information Security, Computer Vision, Computer Architecture, Computer Organization, Operating Systems, Computer Networks"
           />
         </ul>
       </div>

@@ -28,7 +28,7 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
         <span className="capitalize font-medium text-neutral/75">
           {time} | {place}
         </span>
-        <p className="py-2 font-medium w-full">{info}</p>
+        <p className="py-2 font-medium w-full text-md md:text-xl">{info}</p>
       </motion.div>
     </li>
   );

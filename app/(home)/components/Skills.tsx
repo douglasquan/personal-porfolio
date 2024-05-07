@@ -1,18 +1,15 @@
 import React from "react";
 
-// Define the skill type
 interface Skill {
   image: string;
   name: string;
 }
 
-// Define the group of skills type
 interface SkillGroup {
   title: string;
   skills: Skill[];
 }
 
-// Example of skills data
 const skillsData: SkillGroup[] = [
   {
     title: "Frontend",
@@ -20,7 +17,7 @@ const skillsData: SkillGroup[] = [
       {
         name: "React Js",
         image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
       },
 
       {
@@ -30,12 +27,13 @@ const skillsData: SkillGroup[] = [
       },
       {
         name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
       },
       {
         name: "CSS",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
       },
       {
         name: "JavaScript",
@@ -64,7 +62,8 @@ const skillsData: SkillGroup[] = [
     skills: [
       {
         name: "Node Js",
-        image: "https://nodejs.org/static/images/logo.svg"
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
       },
 
       {
@@ -249,39 +248,33 @@ const skillsData: SkillGroup[] = [
 ];
 const Skills: React.FC = () => {
   return (
-    <div
-      id="skills"
-      className="pt-16 pb-10 flex flex-col items-center justify-center relative z-10 h-screen"
-    >
-      <div className="relative flex flex-col items-center justify-between w-full max-w-8xl gap-3 p-6 mb-8">
-        <h2 className="font-bold text-6xl mt-8 w-full text-center text-accent">Skills</h2>
-        {/* <p className="text-center text-lg max-w-2xl text-gray-600 dark:text-gray-300 mt-3">
-          Here are some of my skills on which I have been working on for the
-          past 2 years.
-        </p> */}
-        <div className="w-full mt-8 flex flex-wrap justify-center gap-8">
-          {skillsData.map((skillGroup, index) => (
-            <div
-              key={index}
-              className="w-full max-w-md bg-white dark:bg-gray-700  shadow-lg rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
-            >
-              <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 text-center mb-6">
-                {skillGroup.title}
-              </h3>
-              <div className="flex flex-wrap justify-center gap-3 mb-6">
-                {skillGroup.skills.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className="text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 flex items-center gap-2"
-                  >
-                    <img src={item.image} alt={item.name} className="w-6 h-6" />
-                    {item.name}
-                  </div>
-                ))}
-              </div>
+    <div className="flex flex-col items-center justify-center w-full max-w-8xl mx-auto p-6">
+      <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-accent">
+        Skills
+      </h2>
+
+      <div className="w-full mt-8 flex flex-wrap justify-center gap-8">
+        {skillsData.map((skillGroup, index) => (
+          <div
+            key={index}
+            className="w-full max-w-md bg-white dark:bg-gray-700  shadow-lg rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          >
+            <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 text-center mb-6">
+              {skillGroup.title}
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3 mb-6">
+              {skillGroup.skills.map((item, itemIndex) => (
+                <div
+                  key={itemIndex}
+                  className="text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 flex items-center gap-2"
+                >
+                  <img src={item.image} alt={item.name} className="w-6 h-6" />
+                  {item.name}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

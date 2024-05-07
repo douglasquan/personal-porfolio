@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 type Card = {
   id: number;
@@ -28,7 +29,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-full h-full p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -84,6 +85,10 @@ const BlurImage = ({ card }: { card: Card }) => {
 };
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
+  if (!selected) {
+    return null; // Or some other placeholder if appropriate
+  }
+
   return (
     <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
       <motion.div
@@ -91,7 +96,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           opacity: 0
         }}
         animate={{
-          opacity: 0.7
+          opacity: 0.75
         }}
         className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
       />
@@ -110,14 +115,15 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         }}
         className="group relative px-8 pb-4 z-[70]"
       >
-        {selected && (
-          <p className="text-xs text-[#888] my-2">{selected.date}</p>
-        )}
-        {selected?.content}
-        <p className="text-error flex items-center text-xl group-hover:underline group-focus:underline">
+        <p className="text-xs text-[#888] my-2">{selected.date}</p>
+        {selected.content}
+        <Link
+          href={`/projects/${selected.id}`}
+          className="text-error flex items-center text-xl hover:underline focus:underline"
+        >
           Read More
-          <FaArrowRight className="text-2xl ml-2 transform duration-200 group-hover:translate-x-2" />
-        </p>
+          <FaArrowRight className="text-2xl ml-2 transform duration-200 hover:translate-x-2" />
+        </Link>
       </motion.div>
     </div>
   );

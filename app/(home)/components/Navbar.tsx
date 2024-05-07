@@ -26,17 +26,18 @@ export default function Navbar() {
         <AiOutlineHome />
       </a>
       <a
+        href="#about"
+        className="p-2 rounded-full text-white text-opacity-70 hover:bg-black hover:bg-opacity-30 hover:text-opacity-100"
+      >
+        <AiOutlineUser />
+      </a>
+      <a
         href="#experience"
         className="p-2 rounded-full text-white text-opacity-70 hover:bg-black hover:bg-opacity-30 hover:text-opacity-100"
       >
         <AiOutlineLaptop />
       </a>
-      {/* <a
-        href="#about"
-        className="p-2 rounded-full text-white text-opacity-70 hover:bg-black hover:bg-opacity-30 hover:text-opacity-100"
-      >
-        <AiOutlineUser />
-      </a> */}
+
       <a
         href="#projects"
         className="p-2 rounded-full text-white text-opacity-70 hover:bg-black hover:bg-opacity-30 hover:text-opacity-100"

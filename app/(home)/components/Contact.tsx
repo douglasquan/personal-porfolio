@@ -61,34 +61,36 @@ const Contact: React.FC<IContactProps> = () => {
   return (
     <motion.div
       ref={ref}
-      className="flex justify-center items-center max-w-6xl mx-auto gap-12 flex-col md:flex-row min-h-screen"
+      className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto gap-4 md:gap-12 p-4 md:p-12 min-h-screen"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
-      <div className="flex-1 flex flex-col gap-10 text-center md:text-left">
+      <div className="flex-1 flex flex-col gap-6 text-center md:text-left">
         <motion.h1
-          className="text-9xl leading-tight md:text-8xl"
+          className="text-4xl md:text-8xl font-bold"
           variants={variants}
         >
           Let’s <span className="text-primary">Connect!</span>
         </motion.h1>
-        <motion.div className="item" variants={variants}>
-          <h2 className="text-2xl">Mail</h2>
+        <motion.div variants={variants}>
+          <h2 className="text-xl md:text-2xl">Mail</h2>
           <span className="font-bold">douglas.quan@mail.utoronto.ca</span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2 className="text-2xl ">Address</h2>
+        <motion.div variants={variants}>
+          <h2 className="text-xl md:text-2xl">Address</h2>
           <span className="font-bold">
             1003 5162 Yonge Street, Toronto, Ontario, Canada
           </span>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2 className="text-2xl">Phone</h2>
+        <motion.div variants={variants}>
+          <h2 className="text-xl md:text-2xl">Phone</h2>
           <span className="font-bold">+1 437 351 1092</span>
         </motion.div>
-
-        <motion.div className="flex items-center gap-5" variants={variants}>
+        <motion.div
+          className="flex justify-center md:justify-start items-center gap-3"
+          variants={variants}
+        >
           {socials.map((social, index) => {
             const Icon = social.Icon;
             return (
@@ -141,7 +143,7 @@ const Contact: React.FC<IContactProps> = () => {
           ref={formRef}
           style={{ zIndex: 20 }}
           onSubmit={sendEmail}
-          className="flex flex-col gap-5"
+          className="flex flex-col gap-3 p-5 md:p-8 rounded-lg "
           initial={{ opacity: 0 }}
           // whileInView={{ opacity: 1 }}
           // transition={{ delay: 4, duration: 1 }}

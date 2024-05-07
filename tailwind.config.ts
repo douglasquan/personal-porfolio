@@ -30,7 +30,17 @@ const config: Config = {
         "indigo-500": "#6366f1", // Replace with your desired color value
         "orange-500": "#f97316", // Replace with your desired color value
         "yellow-500": "#eab308", // Replace with your desired color value
-        "dark-slate-blue": "#282A36"
+        "dark-slate-blue": "#282A36",
+        light: "#F5F3F5",
+        brown: "#302B27",
+        "light-blue": "#576CA8",
+        "marine-blue": "#274690",
+        "space-blue": "#1B264F",
+        "ash-gray": "#ABC8C7",
+        "cadet-gray": "#A5B5BF",
+        "light-red": "#e76f51",
+        orange: "#f4a261",
+        yellow: "#e9c46a"
       },
       borderRadius: {
         lg: "var(--radius, 1rem)",
@@ -77,11 +87,15 @@ const config: Config = {
       },
       fontFamily: {
         mont: ["'var(--font-mont)'"],
-        salsa: ['var(--font-salsa)']
+        salsa: ["var(--font-salsa)"]
       },
       scrollSnapType: {
-        y: 'y mandatory',
+        y: "y mandatory"
       },
+      height: {
+        "50vh": "50vh",
+        "70vh": "70vh"
+      }
     }
   },
   plugins: [
@@ -102,6 +116,7 @@ const config: Config = {
         dracula: {
           ...require("daisyui/src/theming/themes")["dracula"],
           primary: "#6a9cc8",
+          secondary: "#576CA8",
           neutral: "#a9a9a9",
           error: "#ff5555"
         }
