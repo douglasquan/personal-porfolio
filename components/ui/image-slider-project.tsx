@@ -21,7 +21,7 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
   };
 
   return (
-    <section className="relative w-full h-[500px] md:h-[650px]">
+    <section className="relative w-full h-[450px] md:h-[650px]">
       <div className="w-full h-full flex overflow-hidden ">
         {images.map(({ url, alt }, index) => (
           <div

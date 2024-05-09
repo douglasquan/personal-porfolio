@@ -5,6 +5,8 @@ import ImageSlider from "@/components/ui/image-slider-project"; // Adjust path a
 import TechnologyList from "./tech-stack";
 import { IoMdArrowBack } from "react-icons/io";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { FaRegCirclePlay, FaGithub } from "react-icons/fa6";
 
 interface Feature {
   title: string;
@@ -61,6 +63,20 @@ const pageTransition = {
 export default function ProjectDetail({ project }: ProjectDetailProps) {
   const router = useRouter();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setIsScrolled(position > 10); // Set to true if scrolled more than 10px
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const goBack = () => {
     router.push("/"); // Or `router.back()` to go to the previous page in history
   };
@@ -88,74 +104,84 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="mx-auto px-4 py-12 sm:px-6 lg:px-8"
+      className=" mx-auto px-4 py-12 sm:px-6 lg:px-72"
     >
       <button
         onClick={goBack}
-        className="fixed top-5 left-5 z-50 flex items-center bg-primary-500 hover:bg-primary-700 text-white font-bold py-3 px-5 rounded-full shadow-lg text-sm sm:text-base"
+        className={`fixed top-5 left-5 z-50 flex items-center text-white font-bold py-3 px-5 rounded-full shadow-lg text-sm sm:text-base transition-colors duration-300
+            ${
+              isScrolled
+                ? "bg-transparent hover:bg-primary-500"
+                : "bg-primary-500 hover:bg-primary-700  "
+            }`}
         aria-label="Back to home"
       >
         <IoMdArrowBack className="mr-2 h-5 w-5" />
         Back
       </button>
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center text-primary">
+      <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-6 text-center text-primary">
         {project.title}
       </h1>
       <ImageSlider images={images} />
 
       {/* Overview Section */}
-      <div className="my-8 mx-4 sm:mx-64">
+      <div className="my-4 sm:my-8 mx-4 sm:mx-6 md:mx-8 lg:mx-10">
         {project.description.map((item, index) => (
           <div key={index} style={{ whiteSpace: "pre-wrap" }} className="mb-4">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-primary">
               {item.heading}
             </h2>
-            {item.text}
+            <p className="text-base sm:text-lg text-white">{item.text}</p>
           </div>
         ))}
       </div>
 
       {/* Main Features Section */}
-      <div className="my-12">
-        <h3 className="text-3xl  font-bold my-8 mx-64 text-primary">
+      <div className="my-4 sm:my-8">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold my-4 sm:my-6 mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-primary">
           Main Features
-        </h3>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
+        </h2>
+        <div className="flex flex-col sm:flex-row justify-center flex-wrap -m-2">
           {project.features.map((feature, index) => (
             <div
               key={index}
-              className="bg-cadet-gray rounded-lg shadow-md p-4 max-w-sm w-full"
+              className="bg-cadet-gray rounded-lg shadow-md m-4 p-4 max-w-sm w-full"
             >
-              <h4 className="font-bold text-xl mb-2 text-space-blue">
+              <h4 className="font-bold text-lg sm:text-xl mb-2 text-space-blue">
                 {feature.title}
               </h4>
-              <p className="text-gray-700 text-base">{feature.description}</p>
+              <p className="text-base sm:text-lg text-gray-700">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Technology Used */}
-      <div className="my-12 mx-auto max-w-4xl">
-        <h3 className="text-3xl font-bold mb-3 text-center">Tech Stack:</h3>
+      <div className="my-4 sm:my-8 mx-auto max-w-4xl">
+        <h3 className="text-2xl sm:text-3xl font-bold mb-3 text-center text-primary">
+          Tech Stack:
+        </h3>
         <TechnologyList technologies={project.technology} />
       </div>
 
       {/* Demo and GitHub links */}
       <div className="flex flex-col items-center space-y-4 mt-6">
-        <div className="flex justify-center space-x-4">
+        <div className="flex flex-wrap justify-center space-x-4">
           <a
             href={project.demoUrl}
-            className="btn-primary bg-light-blue p-6 text-xl rounded-lg"
+            className="btn-primary bg-primary py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl rounded-lg inline-flex items-center justify-center"
           >
-            View Demo
+            <FaRegCirclePlay className="mr-2" aria-label="Play Icon" /> View
+            Demo
           </a>
           <a
             href={project.githubUrl}
-            className="btn-secondary bg-light-blue p-6 text-xl rounded-lg"
+            className="btn-secondary bg-primary py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl rounded-lg inline-flex items-center justify-center"
           >
-            GitHub
+            <FaGithub className="mr-2" aria-label="GitHub Icon" /> GitHub
           </a>
         </div>
       </div>
@@ -164,13 +190,13 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       <div className="flex justify-between mt-8">
         <button
           onClick={() => navigateProject("prev")}
-          className="btn-secondary bg-secondary  p-4 rounded-md"
+          className="btn-secondary bg-secondary p-3 sm:p-4 rounded-md text-base sm:text-lg"
         >
           Previous Project
         </button>
         <button
           onClick={() => navigateProject("next")}
-          className="btn-secondary bg-secondary  p-4 rounded-md"
+          className="btn-secondary bg-secondary p-3 sm:p-4 rounded-md text-base sm:text-lg"
         >
           Next Project
         </button>
