@@ -104,7 +104,7 @@ export function Project() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-light-blue">Webite</p>
+      <p className="font-bold text-4xl text-light-blue">WeBite</p>
       <p className="font-normal text-base text-cadet-gray"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A food ordering app that allows passionate home cooks to sell their food
@@ -119,11 +119,13 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-light-blue">J2C Translator</p>
+      <p className="font-bold text-4xl text-light-blue">MeetHomie</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A Transformer model for sentence-based Jyutping to Chinese Characters
-        transliteration.
+        An intuitive and easy-to-use scheduling app that allows users to
+        schedule meetings with others. It streamlines the process of organizing
+        meetings by enabling users to easily set up and coordinate meetings with
+        their contacts.
       </p>
     </div>
   );
@@ -143,13 +145,11 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-light-blue">MeetHomie</p>
+      <p className="font-bold text-4xl text-light-blue">J2C Translator</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        An intuitive and easy-to-use scheduling app that allows users to
-        schedule meetings with others. It streamlines the process of organizing
-        meetings by enabling users to easily set up and coordinate meetings with
-        their contacts.
+        A Transformer model for sentence-based Jyutping to Chinese Characters
+        transliteration.
       </p>
     </div>
   );
@@ -179,8 +179,8 @@ const cards = [
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail: "/jyutping/jp_transformer.png",
-    date: "December, 2023"
+    thumbnail: "/meethomie/landing.png",
+    date: "Januaray, 2024"
   },
   {
     id: 3,
@@ -193,8 +193,8 @@ const cards = [
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-1",
-    thumbnail: "/meethomie/landing.png",
-    date: "Janurary, 2024"
+    thumbnail: "/jyutping/jp_transformer.png",
+    date: "December, 2023"
   },
   {
     id: 5,

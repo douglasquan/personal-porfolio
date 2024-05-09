@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat, Salsa } from "next/font/google";
+import {  Salsa } from "next/font/google";
+// import { Montserrat } from "next/font/google";
+
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
+// const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 const salsa = Salsa({
   weight: "400",
   subsets: ["latin"],

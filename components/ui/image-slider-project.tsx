@@ -32,8 +32,8 @@ const ImageSlider = ({ images }: ImageSliderProps) => {
             <Image
               src={url}
               alt={alt}
-              layout="fill"
-              objectFit="contain"
+              fill
+              style={{ objectFit: "contain" }}
               quality={100}
             />
           </div>

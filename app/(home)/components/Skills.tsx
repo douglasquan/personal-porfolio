@@ -177,6 +177,10 @@ const skillsData: SkillGroup[] = [
         name: "PyTorch",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+      },
+      {
+        name: "Hugging Face",
+        image: "https://img.icons8.com/fluency/48/hugging-face_app.png"
       }
     ]
   },

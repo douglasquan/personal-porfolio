@@ -11,10 +11,15 @@ interface Feature {
   description: string;
 }
 
+interface DescriptionItem {
+  heading: string;
+  text: string;
+}
+
 interface Project {
   id: number;
   title: string;
-  description: string;
+  description: DescriptionItem[];
   images: string[];
   technology: string[];
   features: Feature[];
@@ -83,21 +88,40 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto px-4 py-12"
+      className="mx-auto px-4 py-12 sm:px-6 lg:px-8"
     >
-      <h1 className="text-6xl font-bold mb-4 text-center">{project.title}</h1>
+      <button
+        onClick={goBack}
+        className="fixed top-5 left-5 z-50 flex items-center bg-primary-500 hover:bg-primary-700 text-white font-bold py-3 px-5 rounded-full shadow-lg text-sm sm:text-base"
+        aria-label="Back to home"
+      >
+        <IoMdArrowBack className="mr-2 h-5 w-5" />
+        Back
+      </button>
+
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center text-primary">
+        {project.title}
+      </h1>
       <ImageSlider images={images} />
 
       {/* Overview Section */}
-      <div style={{ whiteSpace: "pre-wrap" }} className="my-12 mx-64">
-        <h2 className="text-3xl font-bold mb-3">Why I Build this app?</h2>
-        <p className="text-lg">{project.description}</p>
+      <div className="my-8 mx-4 sm:mx-64">
+        {project.description.map((item, index) => (
+          <div key={index} style={{ whiteSpace: "pre-wrap" }} className="mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-primary">
+              {item.heading}
+            </h2>
+            {item.text}
+          </div>
+        ))}
       </div>
 
       {/* Main Features Section */}
       <div className="my-12">
-        <h3 className="text-3xl  font-bold my-8 mx-64">Main Features</h3>
-        <div className="flex flex-wrap justify-center gap-4">
+        <h3 className="text-3xl  font-bold my-8 mx-64 text-primary">
+          Main Features
+        </h3>
+        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
           {project.features.map((feature, index) => (
             <div
               key={index}
@@ -114,9 +138,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
 
       {/* Technology Used */}
       <div className="my-12 mx-auto max-w-4xl">
-        <h3 className="text-3xl font-bold mb-3 text-center">
-          Technologies Used:
-        </h3>
+        <h3 className="text-3xl font-bold mb-3 text-center">Tech Stack:</h3>
         <TechnologyList technologies={project.technology} />
       </div>
 
@@ -136,12 +158,6 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
             GitHub
           </a>
         </div>
-        <button
-          onClick={goBack}
-          className="flex items-center text-lg hover:text-light-red"
-        >
-          <IoMdArrowBack className="mr-2" /> Back
-        </button>
       </div>
 
       {/* prev and next project */}
@@ -184,3 +200,32 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return { props: { project } };
 };
+
+function formatDescriptionText(text: string): React.ReactNode {
+  return text.split("\n\n").map((paragraph: string, idx: number) => {
+    const trimmedParagraph = paragraph.trim();
+    console.log("Paragraph:", trimmedParagraph); // Log each trimmed paragraph
+    if (trimmedParagraph.startsWith("-")) {
+      return (
+        <ul key={idx}>
+          {trimmedParagraph.split("\n").map((item: string, itemIdx: number) => {
+            const trimmedItem = item.trim();
+            const indexOfColon = trimmedItem.indexOf(":");
+            if (indexOfColon === -1) {
+              return <li key={itemIdx}>{trimmedItem.substring(1)}</li>; // handle no colon case
+            }
+            console.log("List item:", trimmedItem); // Log each list item
+            return (
+              <li key={itemIdx}>
+                <strong>{trimmedItem.substring(1, indexOfColon + 1)}</strong>
+                {trimmedItem.substring(indexOfColon + 2)}
+              </li>
+            );
+          })}
+        </ul>
+      );
+    } else {
+      return <p key={idx}>{trimmedParagraph}</p>;
+    }
+  });
+}

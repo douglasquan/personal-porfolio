@@ -1,8 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Webite",
-    "description": "Webite is a food ordering app designed to bridge the gap between home cooks and friends. This project was deeply personal, as I am an passionate home cook who sells home-cooked meals to my friends due to the lack of food options at University. The app was developed to streamline order management and enhance the user experience, transcending the limitations of traditional communication and management methods used previously. \n\nPrior to developing Webite, I relied on Excel spreadsheets to keep track of orders and payments. This method, while somewhat effective, became increasingly annoying and troublesome as the volume of orders grew. Managing these spreadsheets was time-consuming and error-prone, leading to challenges in tracking payments accurately and efficiently.\n\nCommunication with friends was primarily conducted through WhatsApp. While this platform provided a basic means to notify and update menu information, it lacked organization and was not optimal for managing a growing customer base. The interface did not support the structured presentation of menu items, nor did it allow for easy modifications and updates in real-time. This often resulted in confusion and miscommunication.\n\nWebite revolutionizes this process by offering a centralized platform where I can manage menus, take orders, and process payments seamlessly. Its tailored interface is designed specifically for culinary commerce, enabling better organization, real-time updates, and a more engaging user experience compared to the ad-hoc systems previously used.\n\nThe introduction of Webite has significantly improved the operational efficiency and satisfaction of both the cook and the customers, proving to be a substantial upgrade over the combination of Excel and WhatsApp.",
+    "title": "WeBite",
+    "description": [
+      {
+        "heading": "Why I built this App",
+        "text": "Webite is a food ordering app designed to bridge the gap between home cooks and friends. This project was deeply personal, as I am an passionate home cook who sells home-cooked meals to my friends due to the lack of food options at University. The app was developed to streamline order management and enhance the user experience, transcending the limitations of traditional communication and management methods used previously. \n\nPrior to developing Webite, I relied on Excel spreadsheets to keep track of orders and payments. This method, while somewhat effective, became increasingly annoying and troublesome as the volume of orders grew. Managing these spreadsheets was time-consuming and error-prone, leading to challenges in tracking payments accurately and efficiently.\n\nCommunication with friends was primarily conducted through WhatsApp. While this platform provided a basic means to notify and update menu information, it lacked organization and was not optimal for managing a growing customer base. The interface did not support the structured presentation of menu items, nor did it allow for easy modifications and updates in real-time. This often resulted in confusion and miscommunication.\n\nWebite revolutionizes this process by offering a centralized platform where I can manage menus, take orders, and process payments seamlessly. Its tailored interface is designed specifically for culinary commerce, enabling better organization, real-time updates, and a more engaging user experience compared to the ad-hoc systems previously used.\n\nThe introduction of Webite has significantly improved the operational efficiency and satisfaction of both the cook and the customers, proving to be a substantial upgrade over the combination of Excel and WhatsApp."
+      }
+    ],
+
     "images": [
       "/webite/landing.png",
       "/webite/home.png",
@@ -58,40 +64,82 @@
 
   {
     "id": 2,
-    "title": "Meethomie",
-    "description": "Webite is a food ordering app designed to bridge the gap between home cooks and friends. This project was deeply personal, as I am an passionate home cook who sells home-cooked meals to my friends due to the lack of food options at University. The app aimed to streamline order management and enhance the user experience beyond the capabilities of traditional group chat platforms like WhatsApp.",
-    "images": [
-      "/webite/landing.png",
-      "/webite/home.png",
-      "/webite/chef_menu.png",
-      "/webite/customer_menu.png",
-      "/webite/chef_review.png",
-      "/webite/customer_review.png",
-      "/webite/summary.png"
-    ],
-    "technology": ["React Js", "Next Js", "HTML", "CSS", "TypeScript"],
-    "features": [
+    "title": "MeetHomie",
+    "description": [
       {
-        "title": "Streamlined Order Management",
-        "description": "Streamlined order management for home cooks."
-      },
-      {
-        "title": "Enhanced User Experience",
-        "description": "Enhanced user experience compared to traditional group chats."
-      },
-      {
-        "title": "Real-time Updates",
-        "description": "Real-time order updates and notifications."
+        "heading": "Why I built this App",
+        "text": "The inspiration behind developing this scheduling app stemmed from the noticeable inefficiencies and limitations present in existing scheduling solutions. Many of these applications often require cumbersome steps to simply set up a meeting, lack intuitive interfaces, or do not offer flexible scheduling options that cater to the varying availability and preferences of all participants.\n\nMy scheduling app addresses these problems by:\n\n - Simplifying User Authentication: Users can create an account with just their email, making the entry barrier as low as possible.\n\n - Enhanced Flexibility in Scheduling: Unlike many other apps, this platform allows the host to propose multiple time slots and lets the invitees indicate their availability preferences as high, medium, or low. This feature ensures that the final meeting time accommodates the preferences of all participants as much as possible, significantly reducing scheduling conflicts.\n\n - Centralized and Intuitive Dashboard: All scheduled meetings are displayed on a calendar view, providing a holistic and easy-to-navigate overview. Users can manage, accept, and finalize invitations effortlessly from a single page.\n\n - Improved Communication: The ability to leave notes for each meeting invites—ranging from logistical details to personal messages—facilitates better communication and personalization.\n\nThese features collectively provide a more user-friendly, efficient, and flexible scheduling experience, addressing the shortcomings of existing tools and enhancing user satisfaction."
       }
     ],
-    "date": "January 1, 2021",
+    "images": [
+      "/meethomie/landing.png",
+      "/meethomie/create_acc.png",
+      "/meethomie/login.png",
+      "/meethomie/home_page.png",
+      "/meethomie/create_1.png",
+      "/meethomie/create_2.png",
+      "/meethomie/availability.png",
+      "/meethomie/finalize.png",
+      "/meethomie/profile.png",
+      "/meethomie/contact.png",
+      "/meethomie/view_meeting.png"
+    ],
+    "technology": [
+      "React Js",
+      "Django",
+      "Node Js",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Material UI",
+      "JavaScript",
+      "Python",
+      "Postgresql",
+      "Postman"
+    ],
+    "features": [
+      {
+        "title": "User Authentication System",
+        "description": "Streamlined sign-up and login process using only an email address."
+      },
+      {
+        "title": "Contact Management",
+        "description": "Users can easily add and manage contacts within the app, simplifying the process of scheduling meetings with frequent connections."
+      },
+      {
+        "title": "Host-Controlled Meeting Creation",
+        "description": "Hosts can create a meeting, propose multiple time slots, and invite contacts. This allows hosts to manage their time effectively while considering the availability of others."
+      },
+      {
+        "title": "Preference-Based Time Selection",
+        "description": "Both hosts and invitees can mark their availability as high, medium, or low for proposed times. This feature prioritizes everyone's preferences and aims to find the most suitable meeting time."
+      },
+      {
+        "title": "Unified Dashboard",
+        "description": "A user-friendly dashboard that displays all meetings in a calendar view. It includes tools for managing, accepting, and finalizing invitations, all from one central location."
+      },
+      {
+        "title": "Notes and Communication",
+        "description": "Users can leave notes for each other within the app, providing a platform for exchanging important meeting details or personal messages, which enhances communication and the overall user experience."
+      }
+    ],
+    "date": "January, 2024",
     "demoUrl": "https://webite-demo.com",
-    "githubUrl": "https://github.com/douglasquan/WeBite-Food-Ordering-Management-for-Home-Cooks-"
+    "githubUrl": "https://github.com/douglasquan/MeetHomie-scheduling-app"
   },
   {
     "id": 3,
     "title": "coming soon",
-    "description": "coming soon",
+    "description": [
+      {
+        "heading": "Introduction",
+        "text": "This is an introduction to the project."
+      },
+      {
+        "heading": "Background",
+        "text": "Here is some background information."
+      }
+    ],
     "images": [],
     "technology": [],
     "features": [
@@ -106,24 +154,79 @@
   },
   {
     "id": 4,
-    "title": "coming soon",
-    "description": "coming soon",
-    "images": [],
-    "technology": [],
-    "features": [
+    "title": "J2C Translator",
+    "description": [
       {
-        "title": "coming soon",
-        "description": "coming soon"
+        "heading": "Why I built this App",
+        "text": "The motivation for developing the Jyutping to Chinese character transliteration app stems from significant challenges within the Cantonese-speaking communities, particularly in handling linguistic data for NLP applications. These challenges include inconsistencies in Jyutping transcriptions, lack of standardization, and the presence of transcription errors from heritage speakers who are not fluent. Such issues have stymied the progress of various NLP projects, making the systematic generation of character transcriptions crucial.\n\nThis app addresses these problems by enhancing the consistency and reliability of Jyutping transcriptions. By improving how Jyutping is converted to Chinese characters, the app not only facilitates linguistic research and technological applications like speech-to-text and machine translation but also plays a vital role in preserving the Cantonese language and cultural heritage. This is particularly important as Cantonese holds the position of the second most spoken immigrant language in Toronto, enriching its cultural fabric. Through more accurate and efficient transliteration methods, this app aims to bridge communication gaps across generations and support the integration of heritage languages into modern tech platforms."
+      },
+      {
+        "heading": "Why Transformer Over Other Architectures?",
+        "text": "The Transformer model was chosen over other architectures like RNNs or LSTMs for several reasons: \n\n -Attention Mechanism: Transformers utilize a self-attention mechanism which helps in capturing complex and non-linear relationships between Jyutping and Chinese characters, crucial for addressing the nuances of transliteration tasks.\n\n -Parallel Processing: Unlike RNNs that process data sequentially, Transformers handle multiple data points simultaneously, enhancing speed and efficiency, which is vital for processing large datasets.\n\n -Handling Long-Term Dependencies: RNNs often struggle with long-term dependencies due to vanishing gradients. Transformers overcome this limitation by using positional encodings and attention mechanisms, providing a more robust understanding of context.\n\n -Scalability: Transformers are more scalable to larger datasets, which is beneficial for training with extensive corpora needed for robust transliteration models."
       }
     ],
-    "date": "coming soon",
+    "images": [
+      "/jyutping/jp_transformer.png",
+      "/jyutping/csc413_model_architecture.png",
+      "/jyutping/MultiHeadAttention.png",
+      "/jyutping/all_acc.png",
+      "/jyutping/all_acc_2.png",
+      "/jyutping/best_model_acc.png",
+      "/jyutping/best_model_loss.png",
+      "/jyutping/j2c_example.png"
+    ],
+    "technology": [
+      "Python",
+      "PyTorch",
+      "Tensorflow",
+      "Scikit-learn",
+      "NumPy",
+      "HuggingFace",
+      "Google Colab"
+    ],
+    "features": [
+      {
+        "title": "Model Accuracy",
+        "description": "The project achieved an impressive transliteration accuracy of 94% on the testing set after systematic refinement through homophone weighting and hyperparameter tuning."
+      },
+      {
+        "title": " Model Design",
+        "description": " Incorporating a Homophones Weighting Layer, which adjusts the weighting of logit outputs based on homophonic relationships, significantly enhanced the model's performance by focusing on likely character outputs."
+      },
+      {
+        "title": "Comprehensive Dataset Utilization",
+        "description": "The use of diverse datasets, including conversational corpora and a lexical wordlist, allowed the model to capture a broad spectrum of vocabulary and informal language usage, which are critical for real-world applications."
+      },
+      {
+        "title": "Technical Challenges",
+        "description": "The project faced challenges with domain-specific vocabulary and terms not present in the training data, leading to transliteration errors. This highlights the need for ongoing data enrichment and model training to handle out-of-vocabulary words effectively."
+      },
+      {
+        "title": "Ethical and Cultural Considerations",
+        "description": "The project underscores the importance of handling sensitive linguistic data responsibly while also contributing to the preservation of cultural heritage through technology."
+      },
+      {
+        "title": "Future Directions",
+        "description": "Future improvements could include enhancing the model's ability to generalize across different dialects and further refining the handling of rare and domain-specific terms to reduce transliteration errors."
+      }
+    ],
+    "date": "December, 2023",
     "demoUrl": "coming soon",
-    "githubUrl": "coming soon"
+    "githubUrl": "https://github.com/douglasquan/J2P-Translator"
   },
   {
     "id": 5,
     "title": "coming soon",
-    "description": "coming soon",
+    "description": [
+      {
+        "heading": "Introduction",
+        "text": "This is an introduction to the project."
+      },
+      {
+        "heading": "Background",
+        "text": "Here is some background information."
+      }
+    ],
     "images": [],
     "technology": [],
     "features": [

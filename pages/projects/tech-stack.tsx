@@ -81,7 +81,7 @@ const allSkills = {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg",
   Pandas:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg",
-  Numpy:
+  NumPy:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
   Excel:
     "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg",
@@ -93,10 +93,11 @@ const allSkills = {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
   "Google Colab":
     "https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg",
-  "scikit-learn":
+  "Scikit-learn":
     "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png",
   PyTorch:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
+  HuggingFace: "https://img.icons8.com/fluency/48/hugging-face_app.png",
   Git: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
   GitHub:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",

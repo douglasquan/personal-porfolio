@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const AboutMe: React.FC = () => {
   const Photos = [1, 2, 3, 4, 5, 6].map((n) => `/about/about_${n}.JPG`);
@@ -7,7 +8,12 @@ const AboutMe: React.FC = () => {
   return (
     <div className="h-screen flex flex-col justify-between p-4">
       {/* Text Section */}
-      <div className="flex items-center justify-center h-[70vh] md:h-[50vh] mb-4">
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+        className="flex items-center justify-center h-[70vh] md:h-[50vh] mb-4"
+      >
         <div className="max-w-4xl w-full px-4 mx-auto text-center sm:max-w-5xl">
           <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-accent">
             About Me
@@ -35,7 +41,7 @@ const AboutMe: React.FC = () => {
             hard work, it would always lead to tangible results.
           </p>
         </div>
-      </div>
+      </motion.div>
       {/* Image Gallery */}
       <div className="flex justify-center items-center h-[30vh] md:h-[50vh]">
         <div className="grid grid-cols-3 grid-rows-2 gap-2 max-w-6xl px-4 py-2 w-full h-full">
@@ -44,9 +50,9 @@ const AboutMe: React.FC = () => {
               <Image
                 src={photo}
                 alt={`Image ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
+                style={{ objectFit: "cover", objectPosition: "center" }}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           ))}

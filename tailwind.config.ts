@@ -40,7 +40,9 @@ const config: Config = {
         "cadet-gray": "#A5B5BF",
         "light-red": "#e76f51",
         orange: "#f4a261",
-        yellow: "#e9c46a"
+        yellow: "#e9c46a",
+        "primary-500": "#778DA9",
+        "primary-700": "#5c6b7c"
       },
       borderRadius: {
         lg: "var(--radius, 1rem)",
@@ -86,7 +88,7 @@ const config: Config = {
         "20": "20"
       },
       fontFamily: {
-        mont: ["'var(--font-mont)'"],
+        mont: ["var(--font-mont)"],
         salsa: ["var(--font-salsa)"]
       },
       scrollSnapType: {
@@ -115,9 +117,9 @@ const config: Config = {
       {
         dracula: {
           ...require("daisyui/src/theming/themes")["dracula"],
-          primary: "#6a9cc8",
-          secondary: "#576CA8",
-          neutral: "#a9a9a9",
+          primary: "#778DA9",
+          secondary: "#415A77",
+          neutral: "#E0E1DD",
           error: "#ff5555"
         }
       }
