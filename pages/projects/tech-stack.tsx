@@ -22,13 +22,13 @@ interface Skills {
   R: string;
   Matplotlib: string;
   Pandas: string;
-  Numpy: string;
+  NumPy: string;
   Excel: string;
   Tensorflow: string;
   Keras: string;
   Jupyter: string;
   "Google Colab": string;
-  "scikit-learn": string;
+  "Scikit-learn": string;
   PyTorch: string;
   Git: string;
   GitHub: string;
@@ -43,6 +43,7 @@ interface Skills {
   C: string;
   Jira: string;
   SQLite: string;
+  HuggingFace: string;
 }
 
 const allSkills = {
