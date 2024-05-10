@@ -12,14 +12,14 @@ const Experience: React.FC = () => {
   });
 
   return (
-    <div className="pt-16 pb-10">
-      <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-8 mb-8 w-full text-center text-accent">
+    <div className="">
+      <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-accent">
         Experience
       </h2>
 
       <div
         ref={ref}
-        className="w-[75%] mx-auto relative "
+        className="w-[75%] mx-auto relative pt-2"
         // style={{ minHeight: "500px" }}
       >
         <motion.div
@@ -88,8 +88,8 @@ const Experience: React.FC = () => {
       {/* <h1 className="text-primary">This text will use the primary color</h1>
       <p className="text-secondary">This text will use the secondary color</p>
       <p className="text-accent">This text will use the accent color</p>
-      <p className="text-neutral">This text will use the neutral color</p>
-      <p className="text-base-100">This text will use the base color</p>
+      <p className="text-tertiary">This text will use the tertiary color</p>
+      <p className="text-quaternary">This text will use the quaternary color</p>
       <p className="text-info">This text will use the info color</p> */}
     </div>
   );

@@ -24,6 +24,7 @@ const pageTransition = {
 
 const Page: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const sectionClassName = "px-4 md:px-8 py-8";
   return (
     <motion.div
       variants={pageTransition}
@@ -37,25 +38,25 @@ const Page: React.FC = () => {
       >
         <Navbar />
         <main className="space-y-24 lg:space-y-32 ">
-          <section id="home" className="px-4 md:px-8 relative">
+          <section id="home" className={sectionClassName}>
             <HeroSection />
           </section>
-          <section id="about" className="px-4 md:px-8 relative">
+          <section id="about" className={sectionClassName}>
             <AboutMe />
           </section>
-          <section id="experience" className="px-4 md:px-8 relative">
+          <section id="experience" className={sectionClassName}>
             <Experience />
           </section>
-          <section id="projects" className="px-4 md:px-8 relative">
+          <section id="projects" className={sectionClassName}>
             <Project />
           </section>
-          <section id="education" className="px-4 md:px-8 relative">
+          <section id="education" className={sectionClassName}>
             <Education />
           </section>
-          <section id="skills" className="px-4 md:px-8 relative">
+          <section id="skills" className={sectionClassName}>
             <Skills />
           </section>
-          <section id="contact" className="px-4 md:px-8 relative">
+          <section id="contact" className={sectionClassName}>
             <Contact />
           </section>
         </main>

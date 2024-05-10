@@ -31,7 +31,6 @@ const config: Config = {
         "orange-500": "#f97316", // Replace with your desired color value
         "yellow-500": "#eab308", // Replace with your desired color value
         "dark-slate-blue": "#282A36",
-        light: "#F5F3F5",
         brown: "#302B27",
         "light-blue": "#576CA8",
         "marine-blue": "#274690",
@@ -41,8 +40,20 @@ const config: Config = {
         "light-red": "#e76f51",
         orange: "#f4a261",
         yellow: "#e9c46a",
-        "primary-500": "#778DA9",
-        "primary-700": "#5c6b7c"
+        // primary: "#778DA9",
+        // secondary: "#acc3e0",
+        // accent: "#e09f20",
+        white: "#e6f4f1",
+        light: "#ABC8C7",
+        // dark: "#0b263d",
+        // "primary-500": "#778DA9",
+        // "primary-700": "#5c6b7c"
+        primary: "#254E58",
+        secondary: "#112D32",
+        accent: "#4F4A41",
+        "accent-700": "#3e3a33",
+        tertiary: "#88BDBC",
+        quaternary: "#6E6658"
       },
       borderRadius: {
         lg: "var(--radius, 1rem)",
@@ -72,8 +83,14 @@ const config: Config = {
         "glow-random": "random-glow 15s ease-in-out infinite"
       },
       backgroundImage: {
+        // "top-glowing-gradient":
+        //   "linear-gradient(to bottom, #0D1B2A 0%, #1B263B 20%, #415A77 50%, #778DA9 80%, #E0E1DD 100%)"
+        // "top-glowing-gradient":
+        //   "linear-gradient(to bottom, #778da9 0%, #5ba9c5 20%, #39c5ca 40%, #58ddb6 60%, #a2ef91 80%, #f9f871 100%)"
+        // "top-glowing-gradient":
+        //   "linear-gradient(to bottom, #1b263b 0%, #00506c 40%, #007f8c 70%, #00ad90 100%)"
         "top-glowing-gradient":
-          "linear-gradient(to bottom, rgba(15,100,105,1) 0%, rgba(6,90,75,1) 20%, rgba(25,35,55,1) 50%, #1b1b2f 100%)"
+          "linear-gradient(to bottom, #88bdbc 0%, #70aabe 20%, #6d94ba 40%, #7c7baa 60%, #8c608a 80%, #8f4760 100%)"
       },
       backgroundSize: {
         "extra-large": "100% 600%"

@@ -33,7 +33,7 @@ const Details: React.FC<DetailsProps> = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold mb-2 text-orange">
+        <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-secondary">
           {position}
           <a
             href={companyLink}
@@ -44,13 +44,13 @@ const Details: React.FC<DetailsProps> = ({
             @{company}
           </a>
         </h3>
-        <span className="text-sm sm:text-md md:text-lg text-neutral/75">
+        <span className="text-sm sm:text-md md:text-lg text-quaternary/75">
           {time} | {address}
         </span>
-        <ul className="list-none py-2 text-base sm:text-lg md:text-xl">
+        <ul className="text-secondary list-none py-2 text-base sm:text-lg md:text-2xl">
           {workItems.map((item, index) => (
             <li key={index} className="flex items-start my-1">
-              <FaAngleRight className="text-primary mt-1 mr-2 text-lg md:text-xl" />
+              <FaAngleRight className="text-accent mt-1 mr-2 text-lg md:text-xl" />
               <span>{item}</span>
             </li>
           ))}

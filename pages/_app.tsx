@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       disableTransitionOnChange
     >
       <AnimatePresence mode="wait">
-        <div data-theme="dracula" className={`${salsa.variable} font-salsa`}>
+        <div className={`${salsa.variable} font-salsa bg-tertiary`}>
           <Component {...pageProps} />
         </div>
       </AnimatePresence>

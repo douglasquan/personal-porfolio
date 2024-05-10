@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {  Salsa } from "next/font/google";
+import { Salsa } from "next/font/google";
 // import { Montserrat } from "next/font/google";
 
 import "./globals.css";
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       {/* <body data-theme="dracula" className={`${montserrat.variable} font-mont`}> */}
-      <body data-theme="dracula" className={`${salsa.variable} font-salsa`}>
+      <body className={`${salsa.variable} font-salsa text-primary`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

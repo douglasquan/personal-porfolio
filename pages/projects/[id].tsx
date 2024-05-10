@@ -108,11 +108,11 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
     >
       <button
         onClick={goBack}
-        className={`fixed top-5 left-5 z-50 flex items-center text-white font-bold py-3 px-5 rounded-full shadow-lg text-sm sm:text-base transition-colors duration-300
+        className={`fixed top-5 left-5 z-50 flex items-center text-ligtht font-bold py-3 px-5 rounded-full shadow-lg text-sm sm:text-base transition-colors duration-300
             ${
               isScrolled
-                ? "bg-transparent hover:bg-primary-500"
-                : "bg-primary-500 hover:bg-primary-700  "
+                ? "bg-transparent hover:bg-accent text-primary"
+                : "bg-accent hover:bg-accent-700  "
             }`}
         aria-label="Back to home"
       >
@@ -120,7 +120,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         Back
       </button>
 
-      <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-6 text-center text-primary">
+      <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold my-6 text-center text-secondary">
         {project.title}
       </h1>
       <ImageSlider images={images} />
@@ -129,10 +129,10 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       <div className="my-4 sm:my-8 mx-4 sm:mx-6 md:mx-8 lg:mx-10">
         {project.description.map((item, index) => (
           <div key={index} style={{ whiteSpace: "pre-wrap" }} className="mb-4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-primary">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-secondary">
               {item.heading}
             </h2>
-            <p className="text-base sm:text-lg text-white">{item.text}</p>
+            <p className="text-base sm:text-lg text-primary">{item.text}</p>
           </div>
         ))}
       </div>
@@ -146,12 +146,12 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
           {project.features.map((feature, index) => (
             <div
               key={index}
-              className="bg-cadet-gray rounded-lg shadow-md m-4 p-4 max-w-sm w-full"
+              className="bg-light rounded-lg shadow-md m-4 p-4 max-w-sm w-full"
             >
               <h4 className="font-bold text-lg sm:text-xl mb-2 text-space-blue">
                 {feature.title}
               </h4>
-              <p className="text-base sm:text-lg text-gray-700">
+              <p className="text-base sm:text-lg text-primary">
                 {feature.description}
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
 
       {/* Technology Used */}
       <div className="my-4 sm:my-8 mx-auto max-w-4xl">
-        <h3 className="text-2xl sm:text-3xl font-bold mb-3 text-center text-primary">
+        <h3 className="text-2xl sm:text-3xl font-bold mb-3 text-center text-secondary">
           Tech Stack:
         </h3>
         <TechnologyList technologies={project.technology} />
@@ -172,14 +172,14 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         <div className="flex flex-wrap justify-center space-x-4">
           <a
             href={project.demoUrl}
-            className="btn-primary bg-primary py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl rounded-lg inline-flex items-center justify-center"
+            className="btn-primary bg-light py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl rounded-lg inline-flex items-center justify-center"
           >
             <FaRegCirclePlay className="mr-2" aria-label="Play Icon" /> View
             Demo
           </a>
           <a
             href={project.githubUrl}
-            className="btn-secondary bg-primary py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl rounded-lg inline-flex items-center justify-center"
+            className="btn-secondary bg-light py-2 px-4 sm:py-3 sm:px-6 text-lg sm:text-xl rounded-lg inline-flex items-center justify-center"
           >
             <FaGithub className="mr-2" aria-label="GitHub Icon" /> GitHub
           </a>
@@ -190,13 +190,13 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       <div className="flex justify-between mt-8">
         <button
           onClick={() => navigateProject("prev")}
-          className="btn-secondary bg-secondary p-3 sm:p-4 rounded-md text-base sm:text-lg"
+          className="btn-secondary bg-accent text-light p-3 sm:p-4 rounded-md text-base sm:text-lg"
         >
           Previous Project
         </button>
         <button
           onClick={() => navigateProject("next")}
-          className="btn-secondary bg-secondary p-3 sm:p-4 rounded-md text-base sm:text-lg"
+          className="btn-secondary bg-accent text-light p-3 sm:p-4 rounded-md text-base sm:text-lg"
         >
           Next Project
         </button>

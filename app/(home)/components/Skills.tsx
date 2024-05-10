@@ -252,7 +252,7 @@ const skillsData: SkillGroup[] = [
 ];
 const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full max-w-8xl mx-auto p-6">
+    <div className="flex flex-col items-center justify-center w-full max-w-8xl mx-auto">
       <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-accent">
         Skills
       </h2>
@@ -261,16 +261,16 @@ const Skills: React.FC = () => {
         {skillsData.map((skillGroup, index) => (
           <div
             key={index}
-            className="w-full max-w-md bg-white dark:bg-gray-700  shadow-lg rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="w-full max-w-md bg-tertiary dark:bg-primary shadow-lg rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
-            <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 text-center mb-6">
+            <h3 className="text-2xl font-semibold text-tertiary-700 dark:text-tertiary text-center mb-6">
               {skillGroup.title}
             </h3>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               {skillGroup.skills.map((item, itemIndex) => (
                 <div
                   key={itemIndex}
-                  className="text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 flex items-center gap-2"
+                  className="text-sm font-medium text-tertiary-700 dark:text-tertiary rounded-lg px-4 py-2 flex items-center gap-2"
                 >
                   <img src={item.image} alt={item.name} className="w-6 h-6" />
                   {item.name}

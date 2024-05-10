@@ -71,21 +71,23 @@ const Contact: React.FC<IContactProps> = () => {
           className="text-4xl md:text-8xl font-bold"
           variants={variants}
         >
-          Let’s <span className="text-primary">Connect!</span>
+          Let’s <span className="text-secondary">Connect!</span>
         </motion.h1>
         <motion.div variants={variants}>
-          <h2 className="text-xl md:text-2xl">Mail</h2>
-          <span className="font-bold">douglas.quan@mail.utoronto.ca</span>
+          <h2 className="text-secondary text-xl md:text-2xl">Mail:</h2>
+          <span className="text-xl font-bold">
+            douglas.quan@mail.utoronto.ca
+          </span>
         </motion.div>
         <motion.div variants={variants}>
-          <h2 className="text-xl md:text-2xl">Address</h2>
-          <span className="font-bold">
+          <h2 className="text-secondary text-xl md:text-2xl">Address:</h2>
+          <span className="text-xl font-bold">
             1003 5162 Yonge Street, Toronto, Ontario, Canada
           </span>
         </motion.div>
         <motion.div variants={variants}>
-          <h2 className="text-xl md:text-2xl">Phone</h2>
-          <span className="font-bold">+1 437 351 1092</span>
+          <h2 className="text-secondary text-xl md:text-2xl">Phone:</h2>
+          <span className="text-xl font-bold">+1 437 351 1092</span>
         </motion.div>
         <motion.div
           className="flex justify-center md:justify-start items-center gap-3"
@@ -101,7 +103,7 @@ const Contact: React.FC<IContactProps> = () => {
                 rel="noopener noreferrer"
                 aria-label={social.label}
               >
-                <Icon className="w-5 h-5 hover:scale-125 transition-all" />
+                <Icon className="text-accent w-12 h-5 scale-[2] hover:scale-[2.25] transition-all" />
               </a>
             );
           })}
@@ -157,7 +159,7 @@ const Contact: React.FC<IContactProps> = () => {
             style={{ zIndex: 20 }}
             placeholder="Name"
             name="name"
-            className="p-5 bg-transparent border border-white text-white rounded-md"
+            className="p-5 bg-transparent border border-primary text-primary rounded-md"
           />
           <input
             type="email"
@@ -165,18 +167,18 @@ const Contact: React.FC<IContactProps> = () => {
             style={{ zIndex: 20 }}
             placeholder="Email"
             name="email"
-            className="p-5 bg-transparent border border-white text-white rounded-md"
+            className="p-5 bg-transparent border border-primary text-primary rounded-md"
           />
           <textarea
             rows={8}
             style={{ zIndex: 20 }}
             placeholder="Message"
             name="message"
-            className="p-5 bg-transparent border border-white text-white rounded-md"
+            className="p-5 bg-transparent border border-primary text-primary rounded-md"
           />
           <button
             style={{ zIndex: 20 }}
-            className="p-5 bg-accent rounded-md text-white font-semibold cursor-pointer"
+            className="p-5 bg-accent rounded-md text-light font-semibold cursor-pointer"
           >
             Submit
           </button>

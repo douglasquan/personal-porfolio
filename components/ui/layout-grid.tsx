@@ -119,10 +119,10 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         {selected.content}
         <Link
           href={`/projects/${selected.id}`}
-          className="text-error flex items-center text-xl hover:underline focus:underline"
+          className="text-error flex items-center text-xl group-hover:underline focus:underline"
         >
           Read More
-          <FaArrowRight className="text-2xl ml-2 transform duration-200 hover:translate-x-2" />
+          <FaArrowRight className="text-2xl ml-2 transform duration-200 group-hover:translate-x-2" />
         </Link>
       </motion.div>
     </div>

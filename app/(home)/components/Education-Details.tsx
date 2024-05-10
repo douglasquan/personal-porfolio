@@ -15,7 +15,7 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 mx-auto flex flex-col items-center justify-between"
     >
       {/* <LiIcon reference={ref} /> */}
 
@@ -24,11 +24,18 @@ const Details: React.FC<DetailsProps> = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="py-2 capitalize font-bold text-2xl">{type}</h3>
-        <span className="capitalize font-medium text-neutral/75">
+        {/* Degree */}
+        <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-secondary">
+          {type}
+        </h3>
+        {/* Time and Place */}
+        <span className="text-sm sm:text-md md:text-lg text-quaternary/75">
           {time} | {place}
         </span>
-        <p className="py-2 font-medium w-full text-md md:text-xl">{info}</p>
+        {/* Info */}
+        <p className="text-secondary py-2 font-medium w-full text-md md:text-2xl">
+          {info}
+        </p>
       </motion.div>
     </li>
   );
