@@ -24,7 +24,7 @@ interface Project {
   description: DescriptionItem[];
   images: string[];
   technology: string[];
-  features: Feature[];
+  features?: Feature[];
   date: string;
   demoUrl: string;
   githubUrl: string;
@@ -111,8 +111,8 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         className={`fixed top-5 left-5 z-50 flex items-center text-ligtht font-bold py-3 px-5 rounded-full shadow-lg text-sm sm:text-base transition-colors duration-300
             ${
               isScrolled
-                ? "bg-transparent hover:bg-accent text-primary"
-                : "bg-accent hover:bg-accent-700  "
+                ? "bg-accent hover:bg-accent-700"
+                : "bg-transparent hover:bg-accent text-primary  "
             }`}
         aria-label="Back to home"
       >
@@ -138,26 +138,28 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
       </div>
 
       {/* Main Features Section */}
-      <div className="my-4 sm:my-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold my-4 sm:my-6 mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-primary">
-          Main Features
-        </h2>
-        <div className="flex flex-col sm:flex-row justify-center flex-wrap -m-2">
-          {project.features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-light rounded-lg shadow-md m-4 p-4 max-w-sm w-full"
-            >
-              <h4 className="font-bold text-lg sm:text-xl mb-2 text-space-blue">
-                {feature.title}
-              </h4>
-              <p className="text-base sm:text-lg text-primary">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+      {project.features && project.features.length > 0 && (
+        <div className="my-4 sm:my-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold my-4 sm:my-6 mx-4 sm:mx-6 md:mx-8 lg:mx-10 text-secondary">
+            Main Features
+          </h2>
+          <div className="flex flex-col sm:flex-row justify-center flex-wrap -m-2">
+            {project.features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-light rounded-lg shadow-md m-4 p-4 max-w-sm w-full"
+              >
+                <h4 className="font-bold text-lg sm:text-xl mb-2 text-space-blue">
+                  {feature.title}
+                </h4>
+                <p className="text-base sm:text-lg text-primary">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Technology Used */}
       <div className="my-4 sm:my-8 mx-auto max-w-4xl">

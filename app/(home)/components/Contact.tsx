@@ -79,12 +79,12 @@ const Contact: React.FC<IContactProps> = () => {
             douglas.quan@mail.utoronto.ca
           </span>
         </motion.div>
-        <motion.div variants={variants}>
+        {/* <motion.div variants={variants}>
           <h2 className="text-secondary text-xl md:text-2xl">Address:</h2>
           <span className="text-xl font-bold">
             1003 5162 Yonge Street, Toronto, Ontario, Canada
           </span>
-        </motion.div>
+        </motion.div> */}
         <motion.div variants={variants}>
           <h2 className="text-secondary text-xl md:text-2xl">Phone:</h2>
           <span className="text-xl font-bold">+1 437 351 1092</span>

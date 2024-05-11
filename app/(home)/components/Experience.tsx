@@ -65,10 +65,9 @@ const Experience: React.FC = () => {
             time="Jan 2024 - Present"
             address="Remote"
             work={`
-            Assisted in the development and optimization of NLP, ML, and LLM algorithms and applications
-            Participated in the collection, cleaning, and analysis of large datasets to train and test AI models
-            Contributed to the implementation of machine learning pipelines and model deployment strategies
-            Collaborated with the team to conduct experiments and evaluate the performance of AI models
+            Engaged in the end-to-end data pipeline, from sourcing and cleaning datasets to applying analytical techniques for model training and validation.
+            Contributed to the development and integration of machine learning pipelines using TensorFlow and Scikit-learn, ensuring seamless model deployment and scalability in production environments.
+            Collaborated closely with cross-functional teams to design and execute comprehensive experimental frameworks, leading to a 20% improvement in LLM models’ accuracy and efficiency through iterative testing and tuning.
             `}
           />
 
@@ -79,8 +78,11 @@ const Experience: React.FC = () => {
             time="Mar 2024 - Present"
             address="Toronto, ON"
             work={`
-            incoming 
-            `}
+            Collaboratively developed an interactive web application focused on enhancing global health accessibility. Utilized the MERN stack and integrated with GraphQL databases to optimize performance and scalability.
+
+            Implemented a comprehensive patient dashboard that centralizes health data including medical reports, imaging, and medication details. Utilized Redux to create a user-friendly interface for effective health information management.
+            
+            Translated basic user cases into working prototypes and complex models with data structures to meet the requirements and solve customer-facing bugs.            `}
           />
         </ul>
       </div>

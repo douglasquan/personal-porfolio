@@ -129,28 +129,48 @@
   },
   {
     "id": 3,
-    "title": "coming soon",
+    "title": "Car Detection and Viewpoint Classification",
     "description": [
       {
-        "heading": "Introduction",
-        "text": "This is an introduction to the project."
+        "heading": "Responsibilities",
+        "text": "As part of our research team, I focused on developing robust systems for car detection and car viewpoint classification, critical components aimed at improving the safety and reliability of autonomous driving technologies."
       },
       {
-        "heading": "Background",
-        "text": "Here is some background information."
-      }
-    ],
-    "images": [],
-    "technology": [],
-    "features": [
+        "heading": "Car Detection",
+        "text": "Leveraging the YOLOv5 and YOLOv8 models, I implemented cutting-edge object detection frameworks to identify vehicles in dynamic driving environments accurately. These models were chosen for their speed and efficiency, crucial for real-time processing in autonomous driving applications. Our results demonstrated a significant improvement in detection accuracy, contributing to safer navigation and obstacle avoidance in complex urban settings."
+      },
       {
-        "title": "coming soon",
-        "description": "coming soon"
+        "heading": "Car Viewpoint Classification:",
+        "text": "To enhance our system's situational awareness, I developed a viewpoint classification module using transfer learning techniques with pre-trained models like ResNet50. This allowed our system to understand the orientation of detected vehicles, which is vital for predicting their future movements and potential driving paths. The implementation not only improved our model's prediction accuracy but also provided insights into the practical applications of transfer learning in real-world scenarios."
+      },
+      {
+        "heading": "Insights Gained:",
+        "text": "This project allowed me to delve deep into the practical applications of deep learning in autonomous systems, particularly in how state-of-the-art object detection and viewpoint analysis can enhance vehicle perception. The integration of advanced neural network architectures with real-time data processing illuminated the challenges and solutions in deploying AI technologies in safety-critical systems. It was a profound opportunity to apply theoretical knowledge in a highly innovative and impactful domain, sharpening my skills in machine learning, data processing, and system integration."
       }
     ],
-    "date": "coming soon",
-    "demoUrl": "coming soon",
-    "githubUrl": "coming soon"
+    "images": [
+      "/car_detection/auto_drive_thumbnail_2.png",
+      "/car_detection/yolov5v8compare_1.png",
+      "/car_detection/yolov5v8compare_2.png",
+      "/car_detection/car_detect_viewpoint_result.png",
+      "/car_detection/Screenshot from 2024-04-18 23-05-19.png",
+      "/car_detection/Screenshot from 2024-04-18 23-05-28.png",
+      "/car_detection/Screenshot from 2024-04-18 23-05-43.png"
+    ],
+    "technology": [
+      "Python",
+      "OpenCV",
+      "Tensorflow",
+      "PyTorch",
+      "Keras",
+      "NumPy",
+      "Matplotlib",
+      "Google Colab"
+    ],
+
+    "date": "April, 20249",
+    "demoUrl": "https://youtu.be/QrtF-zzVeI0?si=FZ901SWQ9f1_15GP",
+    "githubUrl": "https://github.com/douglasquan/Car-detection-and-Viewpoint-Classification"
   },
   {
     "id": 4,

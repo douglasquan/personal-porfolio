@@ -50,7 +50,7 @@ const config: Config = {
         // "primary-700": "#5c6b7c"
         primary: "#254E58",
         secondary: "#112D32",
-        accent: "#4F4A41",
+        accent: "#745b3b",
         "accent-700": "#3e3a33",
         tertiary: "#88BDBC",
         quaternary: "#6E6658"

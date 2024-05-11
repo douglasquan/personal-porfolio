@@ -34,7 +34,7 @@ const Page: React.FC = () => {
     >
       <div
         ref={scrollContainerRef}
-        className="overflow-y-auto h-screen bg-top-glowing-gradient animate-glow-random bg-extra-large relative"
+        className="overflow-y-auto h-screen bg-top-glowing-gradient animate-glow-random bg-extra-large relative scroll-smooth"
       >
         <Navbar />
         <main className="space-y-24 lg:space-y-32 ">

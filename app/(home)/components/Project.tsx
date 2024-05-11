@@ -114,7 +114,7 @@ const cards = [
     id: 5,
     content: <SkeletonFive />,
     className: "md:col-span-1",
-    thumbnail: "/personal_website.png",
+    thumbnail: "/personal-portfolio(2).png",
     date: "May, 2024"
   }
 ];
