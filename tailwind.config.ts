@@ -24,12 +24,6 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "cyan-500": "#22d3ee", // Replace with your desired color value
-        "emerald-500": "#10b981", // Replace with your desired color value
-        "pink-500": "#ec4899", // Replace with your desired color value
-        "indigo-500": "#6366f1", // Replace with your desired color value
-        "orange-500": "#f97316", // Replace with your desired color value
-        "yellow-500": "#eab308", // Replace with your desired color value
         "dark-slate-blue": "#282A36",
         brown: "#302B27",
         "light-blue": "#576CA8",
@@ -38,28 +32,39 @@ const config: Config = {
         "ash-gray": "#ABC8C7",
         "cadet-gray": "#A5B5BF",
         "light-red": "#e76f51",
-        orange: "#f4a261",
-        yellow: "#e9c46a",
+
         // primary: "#778DA9",
         // secondary: "#acc3e0",
         // accent: "#e09f20",
         white: "#e6f4f1",
         light: "#ABC8C7",
-        // dark: "#0b263d",
-        // "primary-500": "#778DA9",
-        // "primary-700": "#5c6b7c"
-        primary: "#254E58",
-        secondary: "#112D32",
+        "custom-transparent": "hsla(160, 52%, 71%, 0.05)", // for background
+        "custom-shadow": "hsla(160, 52%, 71%, 0.2)", // for shadow
+        primary: "#172C42",
+        secondary: "#216A91",
         accent: "#745b3b",
         "accent-700": "#3e3a33",
-        tertiary: "#88BDBC",
-        quaternary: "#6E6658"
+        tertiary: "#c7cbd2",
+        quaternary: "#7A93A7",
+        dark: {
+          primary: "#216A91",
+          secondary: "#b4c2cd",
+          accent: "#964B00",
+          "accent-700": "#4d3e28",
+          tertiary: "#002253",
+          quaternary: "#7A93A7",
+          light: "#282A36",
+          neutral: "#ffffff"
+        }
       },
       borderRadius: {
         lg: "var(--radius, 1rem)",
         md: "calc(var(--radius, 1rem) - 2px)",
         sm: "calc(var(--radius, 1rem) - 4px)",
         "3rem": "3rem"
+      },
+      boxShadow: {
+        custom: "0 0 10px hsla(160, 52%, 71%, 0.2)" // custom shadow
       },
       keyframes: {
         "random-glow": {
@@ -90,8 +95,12 @@ const config: Config = {
         // "top-glowing-gradient":
         //   "linear-gradient(to bottom, #1b263b 0%, #00506c 40%, #007f8c 70%, #00ad90 100%)"
         "top-glowing-gradient":
-          "linear-gradient(to bottom, #88bdbc 0%, #70aabe 20%, #6d94ba 40%, #7c7baa 60%, #8c608a 80%, #8f4760 100%)"
+          "linear-gradient(to bottom, #88bdbc 0%, #70aabe 20%, #6d94ba 40%, #7c7baa 60%, #8c608a 80%, #8f4760 100%)",
+
+        "dark-top-glowing-gradient":
+          "linear-gradient(to bottom, #172c42 0%, #1d3146 20%, #22354b 50%, #283a4f 80%, #2d3e53 100%)"
       },
+
       backgroundSize: {
         "extra-large": "100% 600%"
       },
@@ -106,7 +115,8 @@ const config: Config = {
       },
       fontFamily: {
         mont: ["var(--font-mont)"],
-        salsa: ["var(--font-salsa)"]
+        salsa: ["var(--font-salsa)"],
+        lato: ["var(--font-lato)"]
       },
       scrollSnapType: {
         y: "y mandatory"
@@ -148,6 +158,12 @@ const config: Config = {
     prefix: "",
     logs: true,
     themeRoot: ":root"
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["dark"],
+      textColor: ["dark"]
+    }
   }
 };
 

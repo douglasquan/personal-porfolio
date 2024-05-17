@@ -12,9 +12,17 @@ import {
   AiOutlineLaptop
 } from "react-icons/ai";
 
-export default function Navbar() {
+interface NavbarProps {
+  isVisible: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ isVisible }) => {
   return (
-    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 z-20 flex gap-2 justify-center items-center p-6 rounded-full bg-black bg-opacity-30 backdrop-blur-[15px]">
+    <nav
+      className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-20 flex gap-2 justify-center items-center p-6 rounded-full bg-black bg-opacity-30 backdrop-blur-[15px] transition-transform ease-in-out duration-500 ${
+        isVisible ? "" : "-translate-y-full"
+      }`}
+    >
       <CustomTooltip text="Home">
         <a
           href="#home"
@@ -79,4 +87,5 @@ export default function Navbar() {
       </CustomTooltip>
     </nav>
   );
-}
+};
+export default Navbar;

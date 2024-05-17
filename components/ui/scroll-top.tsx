@@ -49,11 +49,11 @@ const ScrollToTop: React.FC<ScrollToTopProps> = ({ scrollContainerRef }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed bottom-10 right-10 cursor-pointer z-50"
+          className=" cursor-pointer z-50"
         >
           <button
             onClick={scrollToTop}
-            className="bg-primary hover:bg-primary-700 text-white font-bold py-2 px-4 rounded-full shadow-lg"
+            className="bg-primary dark:bg-dark-primary  text-white font-bold py-2 px-4 rounded-full shadow-lg"
             aria-label="Scroll to top"
           >
             <FaAngleUp className="h-6 w-6" />

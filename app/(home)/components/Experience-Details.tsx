@@ -33,24 +33,24 @@ const Details: React.FC<DetailsProps> = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-secondary">
+        <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-secondary dark:text-dark-secondary">
           {position}
           <a
             href={companyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary ml-1"
+            className="text-secondary dark:text-dark-secondary ml-1"
           >
             @{company}
           </a>
         </h3>
-        <span className="text-sm sm:text-md md:text-lg text-quaternary/75">
+        <span className="text-sm sm:text-md md:text-lg text-quaternary/75 dark:text-dark-secondary/75">
           {time} | {address}
         </span>
-        <ul className="text-secondary list-none py-2 text-base sm:text-lg md:text-2xl">
+        <ul className="text-quaternary dark:text-dark-quaternary list-none py-2 text-base sm:text-lg md:text-2xl">
           {workItems.map((item, index) => (
             <li key={index} className="flex items-start my-1">
-              <FaAngleRight className="text-accent mt-1 mr-2 text-lg md:text-xl" />
+              <FaAngleRight className="text-accent dark:text-dark-accent mt-1 mr-2 text-lg md:text-xl" />
               <span>{item}</span>
             </li>
           ))}

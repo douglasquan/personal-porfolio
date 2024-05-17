@@ -236,27 +236,41 @@
   },
   {
     "id": 5,
-    "title": "coming soon",
+    "title": "Personal Portfolio Website",
     "description": [
       {
-        "heading": "Introduction",
-        "text": "This is an introduction to the project."
-      },
-      {
-        "heading": "Background",
-        "text": "Here is some background information."
+        "heading": "Overview",
+        "text": "A personal website that showcases my projects, skills, and experiences. Built with Next.js, Tailwind CSS, and Framer Motion."
       }
     ],
-    "images": [],
-    "technology": [],
-    "features": [
+    "images": ["/personal-portfolio_resized.png"],
+    "technology": [
+      "Next Js",
+      "React Js",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS"
+    ],
+    "features": [],
+    "date": "May, 2024",
+    "demoUrl": "https://coruscating-chimera-feb55a.netlify.app/",
+    "githubUrl": "https://github.com/douglasquan/personal-porfolio"
+  },
+  {
+    "id": 6,
+    "title": "LinkedIn Comment Scraper",
+    "description": [
       {
-        "title": "coming soon",
-        "description": "coming soon"
+        "heading": "Overview",
+        "text": "This tool is designed to scrape comments from LinkedIn posts, extracting detailed information about each commenter such as their name, current position, LinkedIn URL, and the comment text. The data is saved into a CSV file for further analysis."
       }
     ],
-    "date": "coming soon",
-    "demoUrl": "coming soon",
-    "githubUrl": "coming soon"
+    "images": ["/linkedin-scraper-thumbnail.webp"],
+    "technology": ["Python", "Selenium", "Beautiful Soup"],
+    "features": [],
+    "date": "May, 2024",
+    "demoUrl": "https://github.com/douglasquan/linkedin-comment-scraper",
+    "githubUrl": "https://github.com/douglasquan/linkedin-comment-scraper"
   }
 ]

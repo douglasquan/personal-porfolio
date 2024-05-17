@@ -13,7 +13,7 @@ const Education: React.FC = () => {
 
   return (
     <div className="">
-      <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-accent">
+      <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-primary dark:text-dark-primary">
         Education
       </h2>
 
