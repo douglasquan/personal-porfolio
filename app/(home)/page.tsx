@@ -83,7 +83,7 @@ const Page: React.FC = () => {
           </section>
         </main>
       </div>
-      <div className="fixed bottom-4 right-0 md:right-8 md:bottom-8 flex items-center space-x-2 md:space-x-4">
+      <div className="fixed bottom-4 left-0 md:left-8 md:bottom-8 flex items-center space-x-2 md:space-x-4">
         <ScrollToTop scrollContainerRef={scrollContainerRef} />
       </div>
     </motion.div>
