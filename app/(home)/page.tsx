@@ -55,6 +55,9 @@ const Page: React.FC = () => {
         ref={scrollContainerRef}
         className="overflow-y-auto h-screen bg-[rgb(210,210,230)] dark:bg-[#172C42] animate-glow-random bg-extra-large relative scroll-smooth"
       >
+        <div className="flex justify-end p-2 md:p-8 space-x-2 md:space-x-4">
+          <ThemeToggle />
+        </div>
         <Navbar isVisible={showNavbar} />
         <main className="space-y-24 lg:space-y-32 ">
           <section id="home" className={sectionClassName}>
@@ -80,11 +83,8 @@ const Page: React.FC = () => {
           </section>
         </main>
       </div>
-      <div className="fixed bottom-20 right-4 md:right-8 md:bottom-8 flex items-center space-x-2 md:space-x-4">
+      <div className="fixed bottom-4 right-0 md:right-8 md:bottom-8 flex items-center space-x-2 md:space-x-4">
         <ScrollToTop scrollContainerRef={scrollContainerRef} />
-      </div>
-      <div className="fixed bottom-20 left-4 md:left-8 md:bottom-8 flex items-center space-x-2 md:space-x-4">
-        <ThemeToggle />
       </div>
     </motion.div>
   );
