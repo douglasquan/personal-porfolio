@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const AboutMe: React.FC = () => {
-  const Photos = [1, 2, 3, 4, 5, 6].map((n) => `/about/about_${n}.JPG`);
+  const Photos = [1, 2].map((n) => `/about/about_me_${n}.JPEG`);
 
   return (
     <div className=" flex flex-col justify-between">
@@ -44,16 +44,32 @@ const AboutMe: React.FC = () => {
       </motion.div>
       {/* Image Gallery */}
       <div className="flex justify-center items-center h-[30vh] md:h-[70vh]">
-        <div className="grid grid-cols-3 grid-rows-2 gap-2 max-w-6xl px-4 py-2 w-full h-full">
+        <div className="flex flex-row w-full md:w-9/12 h-full">
           {Photos.map((photo, index) => (
             <div key={index} className="relative w-full h-full">
-              <Image
-                src={photo}
-                alt={`Image ${index + 1}`}
-                style={{ objectFit: "cover", objectPosition: "center" }}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
+              <div
+                style={{
+                  width: "100%",
+                  paddingBottom: "100%", // This percentage sets the aspect ratio (16:9 in this case)
+                  position: "relative"
+                }}
+              >
+                <Image
+                  src={photo}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center"
+                  }}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
             </div>
           ))}
         </div>

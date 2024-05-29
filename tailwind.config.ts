@@ -45,7 +45,7 @@ const config: Config = {
         accent: "#745b3b",
         "accent-700": "#3e3a33",
         tertiary: "#c7cbd2",
-        quaternary: "#7A93A7",
+        quaternary: "#216A91",
         dark: {
           primary: "#216A91",
           secondary: "#b4c2cd",
