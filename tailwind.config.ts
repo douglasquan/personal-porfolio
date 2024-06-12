@@ -82,10 +82,16 @@ const config: Config = {
           "25%": { backgroundPosition: "100% 10%" },
           "50%": { backgroundPosition: "0% 50%" },
           "75%": { backgroundPosition: "100% 30%" }
+        },
+        bounce: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-25%)" } // Customize this value as needed
         }
       },
       animation: {
-        "glow-random": "random-glow 15s ease-in-out infinite"
+        "glow-random": "random-glow 15s ease-in-out infinite",
+        bounce: "bounce 1s  infinite", // Define duration, timing, and repetition
+        "bounce-five": "bounce 1s  7" 
       },
       backgroundImage: {
         // "top-glowing-gradient":

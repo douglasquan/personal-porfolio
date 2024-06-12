@@ -86,7 +86,7 @@ const HeroSection = () => {
           </a>
           <a
             href="#contact"
-            className="animate-bounce focus:animate-none hover:animate-none flex items-center justify-center text-lg font-medium bg-primary dark:bg-dark-secondary mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-light dark:text-dark-tertiary"
+            className="animate-bounce-five focus:animate-none hover:animate-none flex items-center justify-center text-lg font-medium bg-primary dark:bg-dark-secondary mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-light dark:text-dark-tertiary"
           >
             <span className="pr-2">Contact Me</span>
             <IoMdContacts />

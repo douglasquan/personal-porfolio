@@ -23,7 +23,9 @@ const Education: React.FC = () => {
             type="Honours Bachelor of Science, Computer Science Specialist & Mathematics Minor"
             time="Sep 2021 - May 2025"
             place="University of Toronto"
-            info="CGPA: 3.51/4.0. Relevant Coursework: Data Structures, Software Development, Web Development, Database Management, Systems Programming, Artificial Intelligence, Machine Learning, Neural Network and Deep Learning, Information Security, Computer Vision, Computer Architecture, Computer Organization, Operating Systems, Computer Networks"
+            info="CGPA: 3.51/4.0.
+            
+            Relevant Coursework: Data Structures, Software Development, Web Development, Database Management, Systems Programming, Artificial Intelligence, Machine Learning, Neural Network and Deep Learning, Information Security, Computer Vision, Computer Architecture, Computer Organization, Operating Systems, Computer Networks"
           />
         </ul>
       </div>

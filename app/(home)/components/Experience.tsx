@@ -29,33 +29,14 @@ const Experience: React.FC = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position="Research Assistant"
-            company="University of Toronto, Department of Linguistics"
-            companyLink="https://ngn.artsci.utoronto.ca/HLVC/0_0_home.php"
-            time="Sep 2022 - Sep 2023"
+            position="Full Stack Web Developer"
+            company="Global Health Core Inc"
+            companyLink="https://www.globalhealthcoreinc.com/"
+            time="Mar 2024 - Present"
             address="Toronto, ON"
             work={`
-            Contributed in a Jyutping-to-Chinese transliteration project, focusing on data analysis, sourcing, and cleaning for an RNN model, achieved a character error rate (CER) of 0.21
-            Developed Python scripts to automate repetitive tasks and data entry process with PyCantonese and ELAN API on 63 Cantonese interview transcriptions
-            Utilized FileZilla for file management of interview data, and ELAN for NLP analysis
-            Ideated and Developed a corpus-based imputation method to solve inconsistency in transcriptions
-            Recruited Torontonian participants who speak Cantonese as a heritage language for an interview
-            `}
-          />
-
-          <Details
-            position="Research Assistant"
-            company="University of Toronto, Department of Economics"
-            companyLink="https://ngn.artsci.utoronto.ca/HLVC/0_0_home.php"
-            time="Sep 2023 - Present"
-            address="Toronto, ON"
-            work={`
-            Developed a web scraping mechanism in Python to scrape industrial policies and patenting data from PKUlaw.com
-            Leveraged Cohere Classify, a large language model (LLM), to classify over 300k policy documents effectively
-            Applied linear regression to quantify the temporal and spatial influence of policy documents
-            Analyzed datasets with Excel Pivot Tables to identify relationshps between different industry classification systems
-            Wrote Python scripts using Pandas and Seaborn to clean, preprocess, visualize, and analyze datasets"
-            `}
+            Develop a scalable MERN stack web application featuring a patient dashboard that centralizes health data for enhanced global health accessibility, integrating GraphQL for optimal performance.
+          `}
           />
 
           <Details
@@ -65,24 +46,46 @@ const Experience: React.FC = () => {
             time="Jan 2024 - Present"
             address="Remote"
             work={`
-            Engaged in the end-to-end data pipeline, from sourcing and cleaning datasets to applying analytical techniques for model training and validation.
-            Contributed to the development and integration of machine learning pipelines using TensorFlow and Scikit-learn, ensuring seamless model deployment and scalability in production environments.
-            Collaborated closely with cross-functional teams to design and execute comprehensive experimental frameworks, leading to a 20% improvement in LLM models’ accuracy and efficiency through iterative testing and tuning.
+            Manage the end-to-end data pipeline, from sourcing to cleaning datasets and applying analytical techniques, contributing to a 23% improvement in LLM models’ accuracy and efficiency through iterative testing and tuning.
+            
+            Develop and integrate machine learning pipelines using TensorFlow and Scikit-learn, ensuring model scalability and deployment in production environments.
             `}
           />
-
           <Details
-            position="Full Stack Web Developer"
-            company="Global Health Core Inc"
-            companyLink="https://www.globalhealthcoreinc.com/"
-            time="Mar 2024 - Present"
+            position="Research Assistant"
+            company="University of Toronto, Department of Economics"
+            companyLink="https://ngn.artsci.utoronto.ca/HLVC/0_0_home.php"
+            time="Sep 2023 - Present"
             address="Toronto, ON"
             work={`
-            Collaboratively developed an interactive web application focused on enhancing global health accessibility. Utilized the MERN stack and integrated with GraphQL databases to optimize performance and scalability.
+            Utilized Cohere Classify to classify over 300,000 policy documents, enhancing data analysis precision.
 
-            Implemented a comprehensive patient dashboard that centralizes health data including medical reports, imaging, and medication details. Utilized Redux to create a user-friendly interface for effective health information management.
+            Leveraged Cohere Embed to generate text embeddings for policy documents, constructing mappings between different categorization systems.
             
-            Translated basic user cases into working prototypes and complex models with data structures to meet the requirements and solve customer-facing bugs.            `}
+            Analyzed datasets with Excel Pivot Tables to identify relationshps between different industry classification systems
+            
+            Developed Python scripts using Pandas and Seaborn to clean, preprocess, visualize, and analyze datasets
+            
+            Designed a web scraping mechanism in Python to collect industrial policies and patenting data from PKUlaw.com.
+            
+            Automated PDF to Excel data conversion with Python script, parsing text data for data analysis
+            `}
+          />
+          <Details
+            position="Research Assistant"
+            company="University of Toronto, Department of Linguistics"
+            companyLink="https://ngn.artsci.utoronto.ca/HLVC/0_0_home.php"
+            time="Sep 2022 - Sep 2023"
+            address="Toronto, ON"
+            work={`
+            Contributed in a Jyutping-to-Chinese transliteration project, focusing on data analysis, sourcing, and cleaning for an RNN model, achieved a character error rate (CER) of 0.21
+            
+            Developed Python scripts to automate data processing for 63 interview transcriptions by using specialized APIs.
+            
+            Developed a novel corpus-based imputation method to address transcription inconsistencies, improving data reliability.
+            
+            Recruited Torontonian participants who speak Cantonese as a heritage language for an interview
+            `}
           />
         </ul>
       </div>
