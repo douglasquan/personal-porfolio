@@ -122,7 +122,9 @@ const config: Config = {
       fontFamily: {
         mont: ["var(--font-mont)"],
         salsa: ["var(--font-salsa)"],
-        lato: ["var(--font-lato)"]
+        lato: ["var(--font-lato)"],
+        inter: ["var(--font-inter)"]
+
       },
       scrollSnapType: {
         y: "y mandatory"
