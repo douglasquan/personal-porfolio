@@ -132,6 +132,9 @@ const config: Config = {
       height: {
         "50vh": "50vh",
         "70vh": "70vh"
+      },
+      themetransition: {
+        'transition': 'background-color 0.5s, color 0.5s, border-color 0.5s',
       }
     }
   },

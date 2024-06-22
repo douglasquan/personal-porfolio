@@ -35,7 +35,9 @@ const Experience: React.FC = () => {
             time="Mar 2024 - Present"
             address="Toronto, ON"
             work={`
-            Develop a scalable MERN stack web application featuring a patient dashboard that centralizes health data for enhanced global health accessibility, integrating GraphQL for optimal performance.
+        Develop an interactive web application to enhance global health accessibility, using the MERN stack and integrating GraphQL databases, achieving optimized performance and scalability.
+        
+        Develop a customer support AI chatbot using Vercel AI SDK powered by OpenAI’s ChatGPT 3.5, and Pinecone for scalable database management
           `}
           />
 
@@ -46,9 +48,7 @@ const Experience: React.FC = () => {
             time="Jan 2024 - Present"
             address="Remote"
             work={`
-            Manage the end-to-end data pipeline, from sourcing to cleaning datasets and applying analytical techniques, contributing to a 23% improvement in LLM models’ accuracy and efficiency through iterative testing and tuning.
-            
-            Develop and integrate machine learning pipelines using TensorFlow and Scikit-learn, ensuring model scalability and deployment in production environments.
+            Leveraged Hugging Face’s Multimodal LLM (Idefics2-8b) and AI web agent (LaVague) powered by OpenAI GPT-4o and Llama Index to automate job applications filling, reducing manual application time by 80%
             `}
           />
           <Details

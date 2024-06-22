@@ -18,7 +18,7 @@ export function Project() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-secondary dark:text-dark-primary">
+      <p className="font-bold text-4xl text-tertiary dark:text-dark-quaternary">
         WeBite
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-white">
@@ -34,7 +34,7 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-secondary dark:text-dark-primary">
+      <p className="font-bold text-4xl text-tertiary dark:text-dark-quaternary">
         MeetHomie
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200 dark:text-dark-">
@@ -49,7 +49,7 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-secondary dark:text-dark-primary">
+      <p className="font-bold text-4xl text-tertiary dark:text-dark-quaternary">
         Car Detection
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200 dark:text-dark-">
@@ -62,7 +62,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-secondary dark:text-dark-primary">
+      <p className="font-bold text-4xl text-tertiary dark:text-dark-quaternary">
         J2C Translator
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200 dark:text-dark-neutral">
@@ -75,7 +75,7 @@ const SkeletonFour = () => {
 const SkeletonFive = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-secondary dark:text-dark-primary">
+      <p className="font-bold text-4xl text-tertiary dark:text-dark-quaternary">
         Peronal Website
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200 dark:text-dark-">
@@ -89,7 +89,7 @@ const SkeletonFive = () => {
 const SkeletonSix = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-secondary dark:text-dark-primary">
+      <p className="font-bold text-4xl text-tertiary dark:text-dark-quaternary">
         LinkedIn Comment Scraper
       </p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200 dark:text-dark-">

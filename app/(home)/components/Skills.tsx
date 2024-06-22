@@ -15,7 +15,7 @@ const skillsData: SkillGroup[] = [
     title: "Frontend",
     skills: [
       {
-        name: "React Js",
+        name: "React",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
       },
@@ -61,7 +61,7 @@ const skillsData: SkillGroup[] = [
     title: "Backend",
     skills: [
       {
-        name: "Node Js",
+        name: "Node.js",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
       },
@@ -271,7 +271,7 @@ const Skills: React.FC = () => {
         {skillsData.map((skillGroup, index) => (
           <div
             key={index}
-            className="w-full max-w-md bg-quaternary dark:bg-custom-transparent shadow-custom rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+            className="w-full max-w-md bg-tertiary dark:bg-custom-transparent shadow-custom rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
             <h3 className="text-2xl font-semibold text-primary dark:text-dark-secondary text-center mb-6">
               {skillGroup.title}
