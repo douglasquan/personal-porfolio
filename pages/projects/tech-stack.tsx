@@ -44,6 +44,7 @@ interface Skills {
   Jira: string;
   SQLite: string;
   HuggingFace: string;
+  Azure:string;
 }
 
 const allSkills = {
@@ -123,7 +124,8 @@ const allSkills = {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
   Selenium:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg",
-  "Beautiful Soup" : "https://www.svgrepo.com/show/92618/soup.svg"
+  "Beautiful Soup" : "https://www.svgrepo.com/show/92618/soup.svg",
+  Azure: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
 };
 interface TechnologyListProps {
   technologies: string[];

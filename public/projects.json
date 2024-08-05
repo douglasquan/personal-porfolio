@@ -163,6 +163,7 @@
       "Tensorflow",
       "PyTorch",
       "Keras",
+      "Azure",
       "NumPy",
       "Matplotlib",
       "Google Colab"

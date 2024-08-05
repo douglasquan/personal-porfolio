@@ -70,7 +70,7 @@ const HeroSection = () => {
         {/* BUTTONS */}
         <div className="flex flex-row sm:flex-row gap-4 mb-4">
           <a
-            href="/Douglas_Quan_Resume-6.pdf"
+            href="/Douglas_Quan_Resume-9.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
