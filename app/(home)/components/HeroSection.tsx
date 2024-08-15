@@ -52,7 +52,7 @@ const HeroSection = () => {
       {/* TEXT CONTAINER */}
       <div className="lg:w-1/2 flex flex-col items-start pl-0 lg:pl-16 mt-8 lg:mt-0">
         {/* TITLE */}
-        <div className="mb-4 w-full text-center lg:text-left">
+        <div className="mb-8 w-full text-center lg:text-left">
           <TypeAnimation
             sequence={[1000, "Douglas Quan"]}
             wrapper="h1"
@@ -63,9 +63,8 @@ const HeroSection = () => {
           />
         </div>
         {/* BACKGROUND */}
-        <p className="text-secondary dark:text-dark-secondary text-xl md:text-2xl lg:text-3xl font-semibold mb-2 w-full lg:max-w-4xl">
-          I&apos;m a forth-year undergraduate specializing in Computer Science
-          with a minor in Mathematics at the University of Toronto.
+        <p className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl lg:text-3xl font-semibold mb-4 w-full lg:max-w-4xl">
+          4th year CS & Maths @ University of Toronto.
         </p>
         {/* BUTTONS */}
         <div className="flex flex-row sm:flex-row gap-4 mb-4">
@@ -76,9 +75,9 @@ const HeroSection = () => {
           >
             <HoverBorderGradient
               containerClassName="rounded-full w-48 h-16"
-              innerBgClass="bg-primary dark:bg-dark-secondary"
+              innerBgClass="bg-quaternary dark:bg-dark-primary"
               as="button"
-              className="bg-primary dark:bg-dark-secondary text-light dark:text-dark-tertiary flex items-center justify-center space-x-2 px-5 py-3 text-xl "
+              className="bg-quaternary dark:bg-dark-primary text-white dark:text-dark-tertiary flex items-center justify-center space-x-2 px-5 py-3 text-xl "
             >
               <span className="pr-2">Resume</span>
               <FaLocationArrow />
@@ -86,7 +85,7 @@ const HeroSection = () => {
           </a>
           <a
             href="#contact"
-            className="animate-bounce-five focus:animate-none hover:animate-none flex items-center justify-center text-lg font-medium bg-primary dark:bg-dark-secondary mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-light dark:text-dark-tertiary"
+            className="animate-bounce-five focus:animate-none hover:animate-none flex items-center justify-center text-lg font-medium bg-transparent dark:bg-transparent mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-quaternary dark:text-dark-primary border border-black dark:border dark:border-dark-primary"
           >
             <span className="pr-2">Contact Me</span>
             <IoMdContacts />

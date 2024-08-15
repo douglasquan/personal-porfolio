@@ -14,31 +14,29 @@ const AboutMe: React.FC = () => {
         transition={{ duration: 0.5, type: "spring" }}
         className="flex items-center justify-center mb-4"
       >
-        <div className="max-w-4xl w-full px-4 mx-auto text-center sm:max-w-5xl">
+        <div className="max-w-4xl w-full px-4 mx-auto text-left sm:max-w-5xl">
           <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-primary dark:text-dark-primary">
             About Me
           </h2>
           <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-            Throughout my university journey, I am fortunate to have had
-            practical experiences in data analysis, full-stack software
-            engineering, and machine learning. I have consistently sought
-            opportunities to apply my skills in varied contexts to solve
-            real-world problems. I like to leverage technology to optimize
-            everyday tasks and enhance the efficacy of routine processes.
+          📚 Hi! I am Douglas, currently a 4th-year student at the University of Toronto studying Computer Science and Mathematics.
+          </p>
+
+          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+          🧑‍💻 For the last couple of years, I am fortunate to have had practical experiences in data analysis, software engineering, and
+            machine learning. 
           </p>
           <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-            As I advance in my career, I am eager to find opportunities that
-            challenge me and allow me to contribute to innovative projects that
-            have a meaningful impact. I am looking for roles that will utilize
-            my technical skills and my ability, ensuring that I continue to grow
-            both professionally and personally.
+          🎯 As I advance in my career, my aspiration is to find opportunities that challenge me and allow me to contribute to innovative projects that have a meaningful impact. 
           </p>
           <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-            Outside work, I am deeply passionate about cooking and sports,
-            particularly basketball and working out. Cooking for me is a
-            creative outlet that allows me to experiment and adapt. The one
-            thing that playing sports has taught me is that with dedication and
-            hard work, it would always lead to tangible results.
+            🍳 Outside work, I am deeply passionate about cooking. I started a
+            small business at University by selling homemade lunchboxes to my
+            friends in an affordable price.
+          </p>
+          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+            🏀 I also love playing sports. Feel free to hit me up if you want to
+            play basketball or work out together!
           </p>
         </div>
       </motion.div>

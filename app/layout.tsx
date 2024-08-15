@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Salsa } from "next/font/google";
 // import { Montserrat } from "next/font/google";
-import { Lato } from "next/font/google";
-import { Inter } from "next/font/google";
+import { Lato, Inter, Poppins } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -26,6 +25,12 @@ const inter = Inter({
   variable: "--font-inter"
 });
 
+const poppins = Inter({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-poppins"
+});
+
 export const metadata = {
   title: "Douglas Quan",
   description: "Douglas Quan's portfolio Website",
@@ -43,7 +48,7 @@ export default function RootLayout({
       {/* <body data-theme="dracula" className={`${montserrat.variable} font-mont`}> */}
       {/* <body className={`${lato.variable} font-lato text-primary`}> */}
       {/* <body className={`${salsa.variable} font-salsa text-primary`}> */}
-      <body className={`${inter.variable} font-inter text-primary themetransition`}>
+      <body className={`${poppins.variable} font-inter text-primary themetransition`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

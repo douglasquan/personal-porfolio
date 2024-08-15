@@ -40,14 +40,14 @@ const config: Config = {
         light: "#ABC8C7",
         "custom-transparent": "hsla(160, 52%, 71%, 0.05)", // for background
         "custom-shadow": "hsla(160, 52%, 71%, 0.2)", // for shadow
-        primary: "#172C42",
-        secondary: "#216A91",
+        primary: "#2218A7",
+        secondary: "#737CCF",
         accent: "#745b3b",
         "accent-700": "#3e3a33",
         tertiary: "#c7cbd2",
-        quaternary: "#216A91",
+        quaternary: "#000000",
         dark: {
-          primary: "#216A91",
+          primary: "#B3C2F2",
           secondary: "#b4c2cd",
           accent: "#964B00",
           "accent-700": "#4d3e28",
@@ -123,7 +123,8 @@ const config: Config = {
         mont: ["var(--font-mont)"],
         salsa: ["var(--font-salsa)"],
         lato: ["var(--font-lato)"],
-        inter: ["var(--font-inter)"]
+        inter: ["var(--font-inter)"],
+        poppins: ["var(--font-poppins)"]
 
       },
       scrollSnapType: {
