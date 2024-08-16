@@ -273,14 +273,14 @@ const Skills: React.FC = () => {
             key={index}
             className="w-full max-w-md bg-tertiary dark:bg-custom-transparent shadow-custom rounded-lg p-6 md:max-w-lg lg:p-8 opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           >
-            <h3 className="text-2xl font-semibold text-primary dark:text-dark-secondary text-center mb-6">
+            <h3 className="text-2xl font-semibold text-quaternary dark:text-dark-secondary text-center mb-6">
               {skillGroup.title}
             </h3>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               {skillGroup.skills.map((item, itemIndex) => (
                 <div
                   key={itemIndex}
-                  className="text-sm font-medium text-primary dark:text-dark-quaternary rounded-lg px-4 py-2 flex items-center gap-2"
+                  className="text-sm font-medium text-quaternary dark:text-dark-quaternary rounded-lg px-4 py-2 flex items-center gap-2"
                 >
                   <img src={item.image} alt={item.name} className="w-6 h-6" />
                   {item.name}

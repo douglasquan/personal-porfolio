@@ -28,8 +28,7 @@ const Experience: React.FC = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
-
-        <Details
+          <Details
             position="Functional Analyst Intern, Model Governance"
             company="Canadian Tire Corporation"
             companyLink=""
@@ -37,7 +36,15 @@ const Experience: React.FC = () => {
             address="Toronto, ON"
             work={``}
           />
-
+          <Details
+            position="Research Assistant"
+            company="University of Toronto, Department of Economics"
+            companyLink=""
+            time="Sep 2023 - Present"
+            address="Toronto, ON"
+            work={`
+            `}
+          />
           <Details
             position="Full Stack Web Developer"
             company="Global Health Core Inc"
@@ -49,7 +56,7 @@ const Experience: React.FC = () => {
           />
 
           <Details
-            position="Development Engineer Intern (NLP, Machine Learning and LLM)"
+            position="Machine Learning Engineer Intern"
             company="Lillup"
             companyLink="https://www.lillup.com/"
             time="Jan 2024 - May 2024"
@@ -58,15 +65,7 @@ const Experience: React.FC = () => {
 
             `}
           />
-          <Details
-            position="Research Assistant"
-            company="University of Toronto, Department of Economics"
-            companyLink=""
-            time="Sep 2023 - Present"
-            address="Toronto, ON"
-            work={`
-            `}
-          />
+
           <Details
             position="Research Assistant"
             company="University of Toronto, Department of Linguistics"

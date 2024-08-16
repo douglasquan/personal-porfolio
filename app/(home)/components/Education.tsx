@@ -23,7 +23,7 @@ const Education: React.FC = () => {
             type="HBSc, Computer Science Specialist & Mathematics Minor"
             time="Sep 2021 - May 2025"
             place="University of Toronto"
-            info="CGPA: 3.51/4.0."
+            info="CGPA: 3.53/4.0"
           />
         </ul>
       </div>

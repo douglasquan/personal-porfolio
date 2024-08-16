@@ -77,10 +77,10 @@ const Contact: React.FC<IContactProps> = () => {
           </span>
         </motion.h1>
         <motion.div variants={variants}>
-          <h2 className="text-secondary dark:text-dark-secondary text-xl md:text-2xl">
+          <h2 className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl">
             Mail:
           </h2>
-          <span className="text-primary dark:text-dark-quaternary text-xl font-bold">
+          <span className="text-quaternary dark:text-dark-quaternary text-xl font-bold">
             douglas.quan@mail.utoronto.ca
           </span>
         </motion.div>
@@ -91,10 +91,10 @@ const Contact: React.FC<IContactProps> = () => {
           </span>
         </motion.div> */}
         <motion.div variants={variants}>
-          <h2 className="text-secondary dark:text-dark-secondary text-xl md:text-2xl">
+          <h2 className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl">
             Phone:
           </h2>
-          <span className="text-primary dark:text-dark-quaternary text-xl font-bold">
+          <span className="text-quaternary dark:text-dark-quaternary text-xl font-bold">
             +1 437 351 1092
           </span>
         </motion.div>

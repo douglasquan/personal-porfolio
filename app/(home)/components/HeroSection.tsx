@@ -30,29 +30,15 @@ const socials = [
 const HeroSection = () => {
   return (
     <motion.div
-      className="flex flex-col lg:flex-row items-center justify-center pt-32 px-4 lg:px-20 lg:mr-32"
+      className="flex flex-col lg:flex-row items-center justify-center pt-48 "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      {/* IMAGE CONTAINER */}
-      <div className="lg:w-1/2 flex justify-center lg:justify-end pr-0 lg:pr-16">
-        <div className="rounded-full bg-background dark:bg-dark-background w-[250px] h-[250px] lg:w-[500px] lg:h-[500px] overflow-hidden relative">
-          <Image
-            src="/profile-pic_cleanup_upscale.png"
-            alt="Douglas Quan"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{ objectFit: "cover" }}
-            priority
-          />
-        </div>
-      </div>
-
       {/* TEXT CONTAINER */}
-      <div className="lg:w-1/2 flex flex-col items-start pl-0 lg:pl-16 mt-8 lg:mt-0">
+      <div className="text-center flex flex-col pl-0 lg:pl-16 mt-8 lg:mt-0">
         {/* TITLE */}
-        <div className="mb-8 w-full text-center lg:text-left">
+        <div className="mb-8 w-full  lg:text-left">
           <TypeAnimation
             sequence={[1000, "Douglas Quan"]}
             wrapper="h1"
@@ -64,10 +50,10 @@ const HeroSection = () => {
         </div>
         {/* BACKGROUND */}
         <p className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl lg:text-3xl font-semibold mb-4 w-full lg:max-w-4xl">
-          4th year CS & Maths @ University of Toronto.
+          4th year CS & Maths @ University of Toronto
         </p>
         {/* BUTTONS */}
-        <div className="flex flex-row sm:flex-row gap-4 mb-4">
+        <div className="items-center justify-center flex flex-row sm:flex-row gap-4 mb-4">
           <a
             href="/Douglas_Quan_Resume-9.pdf"
             target="_blank"
@@ -93,7 +79,7 @@ const HeroSection = () => {
         </div>
 
         {/* SOCIALS */}
-        <div className="flex gap-3 pl-2 pt-2">
+        <div className="items-center justify-center flex gap-3 pl-2 pt-2">
           {socials.map((social, index) => {
             const Icon = social.Icon;
             return (

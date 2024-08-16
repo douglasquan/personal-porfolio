@@ -6,40 +6,59 @@ const AboutMe: React.FC = () => {
   const Photos = [1, 2].map((n) => `/about/about_me_${n}.JPEG`);
 
   return (
-    <div className=" flex flex-col justify-between">
-      {/* Text Section */}
-      <motion.div
-        initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
-        className="flex items-center justify-center mb-4"
-      >
-        <div className="max-w-4xl w-full px-4 mx-auto text-left sm:max-w-5xl">
-          <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-primary dark:text-dark-primary">
-            About Me
-          </h2>
-          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-          📚 Hi! I am Douglas, currently a 4th-year student at the University of Toronto studying Computer Science and Mathematics.
-          </p>
-
-          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-          🧑‍💻 For the last couple of years, I am fortunate to have had practical experiences in data analysis, software engineering, and
-            machine learning. 
-          </p>
-          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-          🎯 As I advance in my career, my aspiration is to find opportunities that challenge me and allow me to contribute to innovative projects that have a meaningful impact. 
-          </p>
-          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-            🍳 Outside work, I am deeply passionate about cooking. I started a
-            small business at University by selling homemade lunchboxes to my
-            friends in an affordable price.
-          </p>
-          <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-            🏀 I also love playing sports. Feel free to hit me up if you want to
-            play basketball or work out together!
-          </p>
+    <div className=" flex flex-col justify-between ">
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:space-x-8 mx-4 sm:mx-8 lg:mx-32 mb-16  ">
+        {/* Image Section */}
+        <div className="lg:w-1/2 flex justify-center lg:justify-center pr-0 lg:pr-0 mt-16 sm:mt-24 lg:mt-32 ">
+          <div className="rounded-full bg-background dark:bg-dark-background w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] overflow-hidden relative">
+            <Image
+              src="/profile-pic_cleanup_upscale.png"
+              alt="Douglas Quan"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
         </div>
-      </motion.div>
+        {/* Text Section */}
+        <motion.div
+          initial={{ y: 50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, type: "spring" }}
+          className="flex  mb-4"
+        >
+          <div className="max-w-4xl w-full px-4 mx-auto text-left sm:max-w-5xl">
+            <h2 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-6xl mt-16 mb-4 w-full text-center text-primary dark:text-dark-primary">
+              About Me
+            </h2>
+            <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+              📚 Hi! I am Douglas, currently a 4th-year student at the
+              University of Toronto studying Computer Science and Mathematics.
+            </p>
+
+            <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+              🧑‍💻 For the last couple of years, I am fortunate to have had
+              practical experiences in data analysis, software engineering, and
+              machine learning.
+            </p>
+            <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+              🎯 As I advance in my career, my aspiration is to find
+              opportunities that challenge me and allow me to contribute to
+              innovative projects that have a meaningful impact.
+            </p>
+            <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+              🍳 Outside work, I am deeply passionate about cooking. I started a
+              small business at University by selling homemade lunchboxes to my
+              friends in an affordable price.
+            </p>
+            <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
+              🏀 I also love playing sports. Feel free to hit me up if you want
+              to play basketball or work out together!
+            </p>
+          </div>
+        </motion.div>
+      </div>
       {/* Image Gallery */}
       <div className="flex justify-center items-center h-[30vh] md:h-[70vh]">
         <div className="flex flex-row w-full md:w-9/12 h-full">

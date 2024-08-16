@@ -40,16 +40,16 @@ const config: Config = {
         light: "#ABC8C7",
         "custom-transparent": "hsla(160, 52%, 71%, 0.05)", // for background
         "custom-shadow": "hsla(160, 52%, 71%, 0.2)", // for shadow
-        primary: "#2218A7",
-        secondary: "#737CCF",
+        primary: "#003566",
+        secondary: "#415a77",
         accent: "#745b3b",
         "accent-700": "#3e3a33",
         tertiary: "#c7cbd2",
-        quaternary: "#000000",
+        quaternary: "#0d1b2a",
         dark: {
           primary: "#B3C2F2",
           secondary: "#b4c2cd",
-          accent: "#964B00",
+          accent: "#fb8500",
           "accent-700": "#4d3e28",
           tertiary: "#002253",
           quaternary: "#7A93A7",

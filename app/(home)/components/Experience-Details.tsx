@@ -33,17 +33,19 @@ const Details: React.FC<DetailsProps> = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="text-xl sm:text-xl md:text-2xl lg:text-4xl font-bold mb-2 text-secondary dark:text-dark-secondary">
-          {position}
+        <div className="text-xl sm:text-xl md:text-2xl lg:text-4xl font-alt mb-2">
+          <h3 className="text-quaternary dark:text-dark-secondary">
+            {position}
+          </h3>
           <a
             href={companyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-secondary dark:text-dark-secondary ml-1"
+            className="font-bold text-secondary dark:text-dark-secondary block mt-1"
           >
             @{company}
           </a>
-        </h3>
+        </div>
         <span className="text-sm sm:text-md md:text-lg text-quaternary/75 dark:text-dark-secondary/75">
           {time} | {address}
         </span>
