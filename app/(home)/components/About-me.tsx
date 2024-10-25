@@ -38,7 +38,7 @@ const AboutMe: React.FC = () => {
             </p>
 
             <p className="text-quaternary dark:text-dark-quaternary text-lg md:text-2xl py-2">
-              🧑‍💻 For the last couple of years, I am fortunate to have had
+              🧑‍💻 For the last couple of years, I have had
               practical experiences in data analysis, software engineering, and
               machine learning.
             </p>

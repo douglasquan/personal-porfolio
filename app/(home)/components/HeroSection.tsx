@@ -54,7 +54,7 @@ const HeroSection = () => {
         </p>
         {/* BUTTONS */}
         <div className="items-center justify-center flex flex-row sm:flex-row gap-4 mb-4">
-          <a
+          {/* <a
             href="/Douglas_Quan_Resume-14.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const HeroSection = () => {
               <span className="pr-2">Resume</span>
               <FaLocationArrow />
             </HoverBorderGradient>
-          </a>
+          </a> */}
           <a
             href="#contact"
             className="animate-bounce-five focus:animate-none hover:animate-none flex items-center justify-center text-lg font-medium bg-transparent dark:bg-transparent mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-quaternary dark:text-dark-primary border border-black dark:border dark:border-dark-primary"
