@@ -244,7 +244,7 @@
         "text": "A personal website that showcases my projects, skills, and experiences. Built with Next.js, Tailwind CSS, and Framer Motion."
       }
     ],
-    "images": ["/personal-portfolio_resized.png"],
+    "images": ["/personal-project.png"],
     "technology": [
       "Next Js",
       "React Js",
