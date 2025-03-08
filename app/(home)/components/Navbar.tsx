@@ -37,12 +37,12 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: SiLinkedin,
-    href: "https://linkedin.com/in/douglasquan"
+    href: "https://www.linkedin.com/in/douglas-quan/"
   },
   {
     name: "Instagram",
     icon: SiInstagram,
-    href: "https://instagram.com/douglas.quan"
+    href: "https://instagram.com/quan.douglas"
   }
 ];
 
