@@ -29,6 +29,14 @@ const Experience: React.FC = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
+            position="Data Analyst Intern"
+            company="Klue"
+            companyLink=""
+            time="Jan 2025 - Present"
+            address="Toronto, ON"
+            work={``}
+          />
+          <Details
             position="Functional Analyst Intern, Model Governance"
             company="Canadian Tire Corporation"
             companyLink=""
@@ -54,18 +62,6 @@ const Experience: React.FC = () => {
             work={`
           `}
           />
-
-          <Details
-            position="Machine Learning Engineer Intern"
-            company="Lillup"
-            companyLink="https://www.lillup.com/"
-            time="Jan 2024 - May 2024"
-            address="Remote"
-            work={`
-
-            `}
-          />
-
           <Details
             position="Research Assistant"
             company="University of Toronto, Department of Linguistics"
@@ -73,7 +69,6 @@ const Experience: React.FC = () => {
             time="Sep 2022 - Sep 2023"
             address="Toronto, ON"
             work={`
-
             `}
           />
         </ul>

@@ -48,7 +48,9 @@ export default function RootLayout({
       {/* <body data-theme="dracula" className={`${montserrat.variable} font-mont`}> */}
       {/* <body className={`${lato.variable} font-lato text-primary`}> */}
       {/* <body className={`${salsa.variable} font-salsa text-primary`}> */}
-      <body className={`${poppins.variable} font-inter text-primary themetransition`}>
+      <body
+        className={`${poppins.variable} font-inter text-primary themetransition`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

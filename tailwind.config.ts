@@ -91,7 +91,7 @@ const config: Config = {
       animation: {
         "glow-random": "random-glow 15s ease-in-out infinite",
         bounce: "bounce 1s  infinite", // Define duration, timing, and repetition
-        "bounce-five": "bounce 1s  7" 
+        "bounce-five": "bounce 1s  7"
       },
       backgroundImage: {
         // "top-glowing-gradient":
@@ -125,7 +125,6 @@ const config: Config = {
         lato: ["var(--font-lato)"],
         inter: ["var(--font-inter)"],
         poppins: ["var(--font-poppins)"]
-
       },
       scrollSnapType: {
         y: "y mandatory"
@@ -135,7 +134,7 @@ const config: Config = {
         "70vh": "70vh"
       },
       themetransition: {
-        'transition': 'background-color 0.5s, color 0.5s, border-color 0.5s',
+        transition: "background-color 0.5s, color 0.5s, border-color 0.5s"
       }
     }
   },

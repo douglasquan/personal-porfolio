@@ -36,7 +36,7 @@ const HeroSection = () => {
       transition={{ duration: 1 }}
     >
       {/* TEXT CONTAINER */}
-      <div className="text-center flex flex-col pl-0 lg:pl-16 mt-8 lg:mt-0">
+      <div className="text-center flex flex-col mt-8 lg:mt-0">
         {/* TITLE */}
         <div className="mb-8 w-full  lg:text-left">
           <TypeAnimation
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
         {/* BACKGROUND */}
         <p className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl lg:text-3xl font-semibold mb-4 w-full lg:max-w-4xl">
-          4th year CS & Maths @ University of Toronto
+          4th year Computer Science @ University of Toronto
         </p>
         {/* BUTTONS */}
         <div className="items-center justify-center flex flex-row sm:flex-row gap-4 mb-4">
@@ -79,7 +79,7 @@ const HeroSection = () => {
         </div>
 
         {/* SOCIALS */}
-        <div className="items-center justify-center flex gap-3 pl-2 pt-2">
+        {/* <div className="items-center justify-center flex gap-3 pl-2 pt-2">
           {socials.map((social, index) => {
             const Icon = social.Icon;
             return (
@@ -95,7 +95,7 @@ const HeroSection = () => {
               </a>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

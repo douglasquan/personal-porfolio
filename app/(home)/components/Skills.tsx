@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Skill {
   image: string;
@@ -145,8 +146,7 @@ const skillsData: SkillGroup[] = [
       },
       {
         name: "Beautiful Soup",
-        image:
-          "https://www.svgrepo.com/show/92618/soup.svg"
+        image: "https://www.svgrepo.com/show/92618/soup.svg"
       }
     ]
   },
@@ -282,7 +282,13 @@ const Skills: React.FC = () => {
                   key={itemIndex}
                   className="text-sm font-medium text-quaternary dark:text-dark-quaternary rounded-lg px-4 py-2 flex items-center gap-2"
                 >
-                  <img src={item.image} alt={item.name} className="w-6 h-6" />
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    width={24}
+                    height={24}
+                    className="w-6 h-6"
+                  />
                   {item.name}
                 </div>
               ))}
