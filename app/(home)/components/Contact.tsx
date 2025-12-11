@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
-interface IContactProps {}
+interface IContactProps { }
 
 const variants = {
   initial: { y: 500, opacity: 0 },
@@ -23,7 +23,7 @@ const socials = [
     Icon: SiGithub
   },
   {
-    link: "https://linkedin.com/in/douglasquan",
+    link: "https://www.linkedin.com/in/douglas-quan/",
     label: "LinkedIn",
     Icon: SiLinkedin
   },
@@ -80,9 +80,12 @@ const Contact: React.FC<IContactProps> = () => {
           <h2 className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl">
             Mail:
           </h2>
-          <span className="text-quaternary dark:text-dark-quaternary text-xl font-bold">
-            douglas.quan@mail.utoronto.ca
-          </span>
+          <a
+            href="mailto:douglasquan18@gmail.com"
+            className="text-quaternary dark:text-dark-quaternary text-xl font-bold hover:underline"
+          >
+            douglasquan18@gmail.com
+          </a>
         </motion.div>
         {/* <motion.div variants={variants}>
           <h2 className="text-secondary text-xl md:text-2xl">Address:</h2>

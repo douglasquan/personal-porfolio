@@ -47,11 +47,6 @@ const skillsData: SkillGroup[] = [
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
       },
       {
-        name: "Material UI",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg"
-      },
-      {
         name: "Tawilwind CSS",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
@@ -137,7 +132,7 @@ const skillsData: SkillGroup[] = [
       {
         name: "Excel",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg"
+          "https://img.icons8.com/?size=100&id=117561&format=png&color=000000"
       },
       {
         name: "Selenium",
@@ -161,7 +156,7 @@ const skillsData: SkillGroup[] = [
       {
         name: "Tenserflow",
         image:
-          "https://static-00.iconduck.com/assets.00/tensorflow-icon-1911x2048-1m2s54vn.png"
+          "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000"
       },
       {
         name: "Keras",
@@ -195,7 +190,7 @@ const skillsData: SkillGroup[] = [
     ]
   },
   {
-    title: "Others",
+    title: "Tools",
     skills: [
       {
         name: "Git",
@@ -213,11 +208,6 @@ const skillsData: SkillGroup[] = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
       },
       {
-        name: "VS Code",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-      },
-      {
         name: "Postman",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
@@ -226,11 +216,6 @@ const skillsData: SkillGroup[] = [
         name: "Figma",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
-      },
-      {
-        name: "Pycharm",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg"
       },
       {
         name: "UNIX / Linux",

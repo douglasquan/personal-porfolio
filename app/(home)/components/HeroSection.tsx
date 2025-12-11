@@ -45,12 +45,12 @@ const HeroSection = () => {
             repeat={0}
             cursor={false}
             speed={50}
-            className="text-primary dark:text-dark-primary text-5xl md:text-7xl lg:text-9xl font-bold"
+            className="text-primary dark:text-dark-primary text-4xl md:text-6xl lg:text-8xl font-bold"
           />
         </div>
         {/* BACKGROUND */}
-        <p className="text-quaternary dark:text-dark-secondary text-xl md:text-2xl lg:text-3xl font-semibold mb-4 w-full lg:max-w-4xl">
-          4th year Computer Science @ University of Toronto
+        <p className="text-quaternary dark:text-dark-secondary text-lg md:text-xl lg:text-2xl font-semibold mb-4 w-full lg:max-w-4xl">
+          Software Developer @ IBM | Computer Science @ University of Toronto
         </p>
         {/* BUTTONS */}
         <div className="items-center justify-center flex flex-row sm:flex-row gap-4 mb-4">
@@ -71,7 +71,7 @@ const HeroSection = () => {
           </a> */}
           <a
             href="#contact"
-            className="animate-bounce-five focus:animate-none hover:animate-none flex items-center justify-center text-lg font-medium bg-transparent dark:bg-transparent mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-quaternary dark:text-dark-primary border border-black dark:border dark:border-dark-primary"
+            className="animate-bounce-five focus:animate-none hover:animate-none flex items-center justify-center text-base md:text-lg font-medium bg-transparent dark:bg-transparent mt-3 px-5 py-3 w-48 h-16 rounded-full tracking-wide text-quaternary dark:text-dark-primary border border-black dark:border dark:border-dark-primary"
           >
             <span className="pr-2">Contact Me</span>
             <IoMdContacts />

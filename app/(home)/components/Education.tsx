@@ -21,7 +21,7 @@ const Education: React.FC = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-0 sm:ml-4">
           <Details
             type="HBSc, Computer Science Specialist & Mathematics Minor"
-            time="Sep 2021 - May 2025"
+            time="Sep 2021 - May 2026"
             place="University of Toronto"
             info="CGPA: 3.53/4.0"
           />

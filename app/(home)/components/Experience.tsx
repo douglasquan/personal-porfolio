@@ -20,7 +20,7 @@ const Experience: React.FC = () => {
       <div
         ref={ref}
         className="w-[75%] mx-auto relative pt-2"
-        // style={{ minHeight: "500px" }}
+      // style={{ minHeight: "500px" }}
       >
         <motion.div
           style={{ scaleY: scrollYProgress }}
@@ -29,10 +29,18 @@ const Experience: React.FC = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
+            position="Software Developer Intern"
+            company="IBM"
+            companyLink="https://www.ibm.com/products/rhapsody-systems-engineering"
+            time="May 2025 - Present"
+            address="Markham, ON"
+            work={``}
+          />
+          <Details
             position="Data Analyst Intern"
             company="Klue"
-            companyLink=""
-            time="Jan 2025 - Present"
+            companyLink="https://klue.com/"
+            time="Jan 2025 - Apr 2025"
             address="Toronto, ON"
             work={``}
           />
@@ -54,22 +62,12 @@ const Experience: React.FC = () => {
             `}
           />
           <Details
-            position="Full Stack Web Developer"
-            company="Global Health Core Inc"
-            companyLink="https://www.globalhealthcoreinc.com/"
-            time="Mar 2024 - Aug 2024"
-            address="Toronto, ON"
-            work={`
-          `}
-          />
-          <Details
             position="Research Assistant"
             company="University of Toronto, Department of Linguistics"
             companyLink="https://ngn.artsci.utoronto.ca/HLVC/0_0_home.php"
             time="Sep 2022 - Sep 2023"
             address="Toronto, ON"
-            work={`
-            `}
+            work={``}
           />
         </ul>
       </div>
